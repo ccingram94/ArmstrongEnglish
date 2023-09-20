@@ -40,11 +40,11 @@ Before installing, ensure you have the following prerequisites installed:
 
 ### Installation
 
-1. **Clone the repository:**  $ git clone https://github.com/your-username/armstrong-english.git
+1. **Clone the repository:**  `$ git clone https://github.com/ccingram94/armstrongenglish.git`
 
-2. **Navigate to the project directory:** $ cd armstrongenglish
+2. **Navigate to the project directory:** `$ cd armstrongenglish`
 
-3. **Install dependencies:** $ npm install 
+3. **Install dependencies:** `$ npm install`
 
 4. **Configure environmental variables:**  Because this app relies on the use of third-party APIs (e.g. Stripe) you will require a `.env` file in the project root.  Add necessary env variables here such as OAuth settings and Stripe API keys.
 
