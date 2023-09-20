@@ -11,7 +11,7 @@ Armstrong English is a Next.js 13 web application providing tutoring booking and
 
 ## Overview
 
-Armstrong English is a Next-based (13.5) jamstack web application offering a booking and payment system for class scheduling.   This app integrates WeChat OAuth for user authentication and WeChat Pay + AliPay via the Stripe API to provide secure and efficient payment processing for Chinese users.  As a jamstack application, it relies on AWS Lambda for serverless compute paired with API Gateway to protect sensitive data.  Assets are hosted by AWS S3 bucket and served by AWS CloudFront CDN.  In order to reach Mainland Chinese students at a reasonable speed (without hosting or using a CDN based in China (both of which would require a commercial ICP filing) this will be hosted via AWS S3 + Cloudfront via the ap-east-1 server (Hong Kong) to reduce latency (with Singapore as a fallback).
+Armstrong English is a Next-based (13.5) jamstack web application offering a booking and payment system for class scheduling.   This app integrates WeChat OAuth for user authentication and WeChat Pay + AliPay via the Stripe API to provide secure and efficient payment processing for Chinese users.  As a jamstack application, it relies on AWS Lambda for serverless compute paired with API Gateway to protect sensitive data.  Assets are hosted by AWS S3 bucket and served by AWS CloudFront CDN.  In order to reach Mainland Chinese students at a reasonable speed without hosting or using a CDN based in China (both of which would require a commercial ICP filing) this will be hosted via AWS S3 + Cloudfront via the ap-east-1 server (Hong Kong) to reduce latency (with Singapore as a fallback).
 
 ## Features
 
@@ -48,6 +48,6 @@ Before installing, ensure you have the following prerequisites installed:
 
 4. **Configure environmental variables:**  Because this app relies on the use of third-party APIs (e.g. Stripe) you will require a `.env` file in the project root.  Add necessary env variables here such as OAuth settings and Stripe API keys.
 
-5. **Start the dev server:** $ npm run dev
+5. **Start the dev server:** `$ npm run dev`
 
 6. **You may now access the app at `http://localhost:3000`.
