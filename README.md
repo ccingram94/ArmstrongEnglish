@@ -2,7 +2,7 @@
 
 Armstrong English is a Next.js 13 web application providing tutoring booking and payment services to a userbase located in Mainland China. It is designed for use by Mainland Chinese students (eliminating services blocked by the Golden Shield Project and integrating Chinese digital wallets and social media for payments and user authentication). 
 
-## [Live Demo](https://your-live-demo-url.com)
+## [Live Demo](https://armstrongenglish.vercel.app/)
 
 ## Table of Contents
 - [Overview](#overview)
