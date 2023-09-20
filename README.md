@@ -50,4 +50,4 @@ Before installing, ensure you have the following prerequisites installed:
 
 5. **Start the dev server:** `$ npm run dev`
 
-6. **You may now access the app at `http://localhost:3000`.
+6. **You may now access the app at `http://localhost:3000`.**
