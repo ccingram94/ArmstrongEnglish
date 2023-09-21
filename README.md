@@ -1,6 +1,6 @@
 # Armstrong English
 
-Armstrong English is a Next.js 13 web application providing tutoring booking and payment services to a userbase located in Mainland China. It is designed for use by Mainland Chinese students (eliminating services blocked by the Golden Shield Project and integrating Chinese digital wallets and social media for payments and user authentication). 
+Armstrong English is a Next.js (13.5) web application offering booking and payment services tailored for users in Mainland China. It is designed to avoid services blocked by the Golden Shield Project and integrate Chinese digital wallets and social media for payments and user authentication. 
 
 ## [Live Demo](https://armstrongenglish.vercel.app/)
 
@@ -11,19 +11,20 @@ Armstrong English is a Next.js 13 web application providing tutoring booking and
 
 ## Overview
 
-Armstrong English is a Next-based (13.5) jamstack web application offering a booking and payment system for class scheduling.   This app integrates WeChat OAuth for user authentication and WeChat Pay + AliPay via the Stripe API to provide secure and efficient payment processing for Chinese users.  As a jamstack application, it relies on AWS Lambda for serverless compute paired with API Gateway to protect sensitive data.  Assets are hosted by AWS S3 bucket and served by AWS CloudFront CDN.  In order to reach Mainland Chinese students at a reasonable speed without hosting or using a CDN based in China (both of which would require a commercial ICP filing) this will be hosted via AWS S3 + Cloudfront via the ap-east-1 server (Hong Kong) to reduce latency (with Singapore as a fallback).
+Armstrong English is a jamstack web app designed for class scheduling with a convenient booking and payment system tailored to a Chinese userbase.   This app integrates WeChat OAuth for convenient QR- or OTP-based user authentication.   Integration with WeChat Pay and AliPay via the Stripe API provides secure and efficient payment processing with the most popular Chinese digital wallets.  AWS Lambda provides serverless compute paired with API Gateway for security.  Assets are hosted in an AWS S3 bucket and served via AWS CloudFront CDN for optimal performance.  Mainland China enforces the 'Internet Content Provider' (ICP) licensing system, which requires websites hosted on servers (and CDNs) within China to obtain an ICP number through government registration.  In order to reduce latency caused by the Golden Shield Project's packet inspection while also avoiding the arduous process of ICP registration, this application is deployed as a static site using AWS S3 + CloudFront via the ap-east-1 server (Hong Kong) as the primary location, with Singapore as a fallback. This deployment strategy minimizes latency while avoiding the need for a China-based server or CDN that would necessitate ICP filing and government registration.  
+
 
 ## Features
 
-This app is optimized to reduce latency and provide convenient UX for users located in Mainland China without triggering the Golden Shield Project's TCP packet blocks (usually caused by integration of blocked third-party services, e.g. anything Google).  
+This app is optimized for use by students located in Mainland China without triggering the Golden Shield Project's TCP packet blocks (usually caused by integration of banned third-party services, e.g. anything Google).  It is architectured as a Next.js "jamstack" serverless application relying on AWS Lambda, API Gateway security, S3 bucket hosting, and CloudFront CDN delivery of assets. 
 
-- **Next.js 13.5:** This is a static "jamstack" application incorporating Next's React-based component and API routing features to ensure user data persistence while remaining serverless to reduce latency.
+- **Next.js 13.5:** Next's static site and API routing features are combined with AWS Lambda serverless compute in order persist user data while optimizing for speed.  
 
-- **OAuth:** OAuth provides secure user authentication with use of the WeChat provider for the convenience of Chinese users.
+- **OAuth:** OAuth provides secure QR- or OTP-based user authentication through WeChat.
 
-- **Stripe API:** Stripe checkout services include activation of WeChat Pay and AliPay for Chinese users.
+- **Stripe API:** Stripe checkout services include popular Chinese digital wallets like WeChat Pay and AliPay.
 
-- **Tailwind CSS:** UI is styled using utility-first CSS framework Tailwind.
+- **Tailwind CSS:** UI is styled with utility-first CSS framework Tailwind.
 
 ## Getting Started
 
