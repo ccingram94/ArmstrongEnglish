@@ -59,7 +59,7 @@ function Header () {
                             <Popover.Button className="flex items-center gap-x-1 leading-6">
                                 <LanguageIcon className='h-6 w-auto m-2' />
                                 <p className="font-bold text-sm">English (EN) </p>
-                                { !open && <ChevronUpIcon />}
+                                <ChevronDownIcon className="h-6 w-auto ui-open:rotate-180 ui-open:transform transition-all" />
                             </Popover.Button>
                             <Transition
                                 as={Fragment}
@@ -84,17 +84,16 @@ function Header () {
                             </Transition>
                         </Popover>
                     </Popover.Group>
-                    
-                    
                 </div>
             </div>
+            
             <header className="top-0 w-full sticky bg-white drop-shadow-2xl">
                 <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6">
 
                     <div className="flex lg:flex-1 items-center">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Armstrong English</span>
-                            <ChatBubbleLeftRightIcon className="h-8 w-auto" />
+                            <ChatBubbleLeftRightIcon className="h-8 w-auto text-purple-900" />
                         </a>
                     </div>
 
@@ -129,7 +128,7 @@ function Header () {
                                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                             >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-purple-600" aria-hidden="true" />
                                             </div>
                                             <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900">
@@ -141,14 +140,14 @@ function Header () {
                                             </div>
                                         ))}
                                         </div>
-                                        <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                                        <div className="grid grid-cols-2 divide-x divide-purple-900/5 bg-purple-50">
                                         {learnCTA.map((item) => (
                                             <a
                                             key={item.name}
                                             href={item.href}
-                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-purple-900 hover:bg-purple-100"
                                             >
-                                            <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                                            <item.icon className="h-5 w-5 flex-none text-purple-400" aria-hidden="true" />
                                             {item.name}
                                             </a>
                                         ))}
@@ -178,7 +177,7 @@ function Header () {
                                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                             >
                                                 <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                                                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-purple-600" aria-hidden="true" />
                                                 </div>
                                                 <div className="flex-auto">
                                                     <a href={item.href} className="block font-semibold text-gray-900">
@@ -190,14 +189,14 @@ function Header () {
                                             </div>
                                         ))}
                                         </div>
-                                        <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                                        <div className="grid grid-cols-2 divide-x divide-purple-900/5 bg-purple-50">
                                         {classCTA.map((item) => (
                                             <a
                                             key={item.name}
                                             href={item.href}
-                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-purple-900 hover:bg-purple-100"
                                             >
-                                            <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                                            <item.icon className="h-5 w-5 flex-none text-purple-400" aria-hidden="true" />
                                             {item.name}
                                             </a>
                                         ))}
