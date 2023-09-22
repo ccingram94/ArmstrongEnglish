@@ -26,7 +26,9 @@ This app is optimized for use by students located in Mainland China without trig
 
 - **Stripe API:** Stripe checkout services include popular Chinese digital wallets like WeChat Pay and AliPay.
 
-- **Tailwind CSS:** UI is styled with utility-first CSS framework Tailwind.
+- **Tailwind CSS:** UI is styled with Tailwind CSS framework + sister projects Heroicons and HeadlessUI for additional utilities like popover tooltips.
+
+- **Internationalization (react-i18next):** Automatic translations and localization using react-i18next with the optional i18next-http-backend and i18next-browser-languagedetector packages for location detection.
 
 ## Getting Started
 
@@ -45,7 +47,7 @@ Before installing, ensure you have the following prerequisites installed:
 
 1. **Clone the repository:**  `$ git clone https://github.com/ccingram94/armstrongenglish.git`
 
-2. **Install dependencies:** `$ npm install`
+2. **Navigate to main directory and install dependencies:** `$ cd armstrongenglish` and `$ npm install`
 
 3. **Configure environmental variables:**  Because this app relies on the use of third-party APIs (e.g. Stripe) you will require a `.env` file in the project root.  Add necessary env variables here such as OAuth settings and Stripe API keys.
 
