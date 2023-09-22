@@ -59,7 +59,7 @@ function Header () {
                             <Popover.Button className="flex items-center gap-x-1 leading-6">
                                 <LanguageIcon className='h-6 w-auto m-2' />
                                 <p className="font-bold text-sm">English (EN) </p>
-                                { open && <ChevronUpIcon />}
+                                { !open && <ChevronUpIcon />}
                             </Popover.Button>
                             <Transition
                                 as={Fragment}
