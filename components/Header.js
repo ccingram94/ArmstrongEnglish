@@ -210,7 +210,6 @@ function Header () {
 
                     <div className='hidden lg:flex lg:flex-1 m-2 items-center justify-end text-sm font-semibold leading-6'>
                         <p className='text-indigo-900 m-2'>Login</p>
-                        <UserCircleIcon className='text-purple-900 h-12 w-auto' />
                         <button className='bg-gradient-to-br from-purple-900 to-violet-800 text-white rounded-full mx-2'>
                             <p className='p-2'>Book a Class</p>
                         </button>
