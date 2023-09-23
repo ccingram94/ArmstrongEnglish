@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'mesh': "url('/meshgradient.jpg')",
+        'heromesh': "url('/heromesh.jpg')",
       },
     },
   },
