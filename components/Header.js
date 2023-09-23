@@ -41,7 +41,7 @@ function Header () {
     const [ mobileOpen, setMobileOpen ] = useState(false)
     return (
         <>
-            <div className='flex w-full justify-between items-center bg-gradient-to-br from-purple-900 to-violet-800 text-white'>
+            <div className='flex w-full justify-between items-center bg-gradient-to-br from-purple-900 to-violet-800 text-white z-2'>
                 <div className='flex flex-auto justify-center items-center hidden lg:flex'>
                     <MapPinIcon className='h-4 w-auto m-2'/>
                     <p className='font-bold text-sm'>United States + Online </p>
