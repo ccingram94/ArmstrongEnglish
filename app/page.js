@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next';
+import BookingCalendar from '../components/BookingCalendar';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -12,8 +15,9 @@ export default function Home() {
   
   return (
     <>
-    <main className="flex bg-mesh bg-center min-h-screen flex-col items-center justify-between p-24">
-      <h1>{t('Hello World')}</h1>
+    <main className="flex flex-col items-center bg-mesh bg-center min-h-screen">
+      <h1 className='text-3xl w-fit h-fit'>{t('Hello World')}</h1>
+      <BookingCalendar />
     </main>
     </>
   )
