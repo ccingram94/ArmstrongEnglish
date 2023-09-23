@@ -9,6 +9,7 @@ import Hero from '../components/Hero';
 import Pricing from '../components/Pricing';
 import AboutUs from '../components/AboutUs';
 import TestHero from '../components/TestHero';
+import TeachersSection from '../components/TeachersSection';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -25,8 +26,8 @@ export default function Home() {
       <main className="flex flex-col items-center bg-center min-h-screen w-full">
         <Hero />
         <Pricing />
-        <AboutUs />
         <TestHero />
+        <TeachersSection />
       </main>
     </I18nextProvider>
     </>

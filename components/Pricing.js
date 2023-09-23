@@ -21,7 +21,7 @@ function Pricing() {
               {/* Lessons Card */}
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
                 <h3 className="text-lg font-semibold text-violet-900">Online Lessons</h3>
-                <p className="mt-4 text-gray-500">Free!</p>
+                <p className="mt-4 text-gray-500">Free</p>
                 <Link
                   href="/lessons"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
