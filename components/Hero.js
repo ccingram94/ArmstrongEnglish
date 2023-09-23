@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Hero () {
     const { t, i18n } = useTranslation('en-US');
     return (
-         <div class="bg-heromesh bg-cover w-full min-h-screen relative isolate px-6 pt-14 lg:px-8">
+         <div class="bg-heromesh bg-cover w-full relative isolate px-6 pt-14 lg:px-8">
             <div class="mx-auto max-w-2xl">
                 <div class="text-center p-4">
                     <h1 class="text-4xl pt-6 font-bold tracking-tight text-violet-100 sm:text-6xl">{t('Explore the World')}</h1>
