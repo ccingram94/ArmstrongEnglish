@@ -2,7 +2,8 @@
 
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition } from '@headlessui/react';
+import { useTranslation } from 'react-i18next';
 
 import {
     ChatBubbleLeftIcon, ChatBubbleLeftEllipsisIcon, ChatBubbleLeftRightIcon,
@@ -38,22 +39,23 @@ const classOptions = [
 
 
 function Header () {
-    const [ mobileOpen, setMobileOpen ] = useState(false)
+    const [ mobileOpen, setMobileOpen ] = useState(false);
+    const { t, i18n } = useTranslation('en-US');
     return (
         <>
-            <div className='flex w-full justify-between items-center bg-gradient-to-br from-purple-900 to-violet-800 text-white z-2'>
+            <div className='popoverheader flex w-full justify-between items-center bg-gradient-to-br from-indigo-800 to-violet-800 text-white z-2'>
                 <div className='flex flex-auto justify-center items-center hidden lg:flex'>
                     <MapPinIcon className='h-4 w-auto m-2'/>
-                    <p className='font-bold text-sm'>United States + Online </p>
+                    <p className='font-bold text-sm'>{t('United States + Online')}</p>
                 </div>
                 <div className="flex flex-auto justify-center items-center hidden lg:flex">
                     <AcademicCapIcon className='h-4 w-auto m-2' />
                     <p className="font-bold text-sm">classes available now </p>
                     <button className='bg-white hover:bg-opacity-100 bg-opacity-80 transition-all rounded-full mx-2'>
-                        <p className="font-bold text-sm text-purple-900 px-2 transition-all">see calendar</p>
+                        <p className="font-bold text-sm text-violet-900 px-2 transition-all">see calendar</p>
                     </button>
                 </div>
-                <div className="flex flex-auto justify-center items-center">
+                <div className="popoverheader flex flex-auto justify-center items-center">
                     <Popover.Group className="hidden lg:flex lg:gap-x-12">
                         <Popover className="relative">
                             <Popover.Button className="flex items-center gap-x-1 leading-6">
@@ -93,7 +95,7 @@ function Header () {
                     <div className="flex lg:flex-1 items-center">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Armstrong English</span>
-                            <ChatBubbleLeftRightIcon className="h-8 w-auto text-purple-900" />
+                            <ChatBubbleLeftRightIcon className="h-8 w-auto text-violet-900" />
                         </a>
                     </div>
 
@@ -209,8 +211,8 @@ function Header () {
                     
 
                     <div className='hidden lg:flex lg:flex-1 m-2 items-center justify-end text-sm font-semibold leading-6'>
-                        <p className='text-indigo-900 m-2'>Login</p>
-                        <button className='bg-gradient-to-br from-purple-900 to-violet-800 text-white rounded-full mx-2'>
+                        <p className='text-indigo-900/50 m-2'>Login</p>
+                        <button className='shadow-md shadow-violet-300/50 hover:shadow-violet-300 opacity-90 hover:opacity-100 transition-all bg-gradient-to-br from-indigo-800 to-violet-800 shadow-violet-900 text-white rounded-full mx-2'>
                             <p className='p-2'>Book a Class</p>
                         </button>
                         
