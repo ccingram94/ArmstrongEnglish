@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
     <I18nextProvider i18n={i18n} defaultNS={'translation'}>
-      <main className="flex flex-col items-center bg-center min-h-screen">
+      <main className="flex flex-col items-center bg-center min-h-screen w-full">
         <Hero />
         <Pricing />
         <AboutUs />

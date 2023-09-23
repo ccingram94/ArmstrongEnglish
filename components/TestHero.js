@@ -21,15 +21,15 @@ function TestHero() {
         <div className="bg-gradient-to-br from-violet-800 to-indigo-900 text-white py-14">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left Column */}
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h2 className="p-2 text-3xl sm:text-4xl font-semibold">
+        <div className="flex flex-col text-center justify-center lg:justify-start lg:text-left w-full lg:w-1/2">
+          <h2 className="p-2 m-2 text-3xl sm:text-4xl font-semibold">
             Ready to Test Your English Skills?
           </h2>
-          <p className="p-2 sm:text-xl max-w-sm">
-            get immediate scores with our free online English placement test
+          <p className="px-12 lg:p-2 m-2 text-center lg:text-start">
+            try our free online English test and get immediate scores and level placement
           </p>
           <Link href="/freeenglishtest">
-            <p className="p-2 mt-6 inline-block bg-violet-600 px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold text-white hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <p className="p-2 m-2 mt-6 inline-block bg-violet-600 px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold text-white hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               Start Test
             </p>
           </Link>

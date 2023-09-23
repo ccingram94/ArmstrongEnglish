@@ -16,6 +16,18 @@ button {
     outline: none;
 }
 
+.custom-shape-divider-top-1695492520 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+
+
 /* React-Calendar CSS */
 
 .react-calendar {
