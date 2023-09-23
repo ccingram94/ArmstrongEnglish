@@ -1,0 +1,7 @@
+
+function PricingTable () {
+    return (
+        <>
+        </>
+    )
+}

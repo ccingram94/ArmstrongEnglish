@@ -167,9 +167,9 @@ function Header () {
                     
 
                     <div className='hidden lg:flex lg:flex-1 m-2 items-center justify-end text-sm font-semibold leading-6'>
-                        <p className='text-indigo-900/50 m-2'>Login</p>
-                        <button className='shadow-md shadow-violet-300/50 hover:shadow-violet-300 opacity-90 hover:opacity-100 transition-all bg-gradient-to-br from-indigo-800 to-violet-800 shadow-violet-900 text-white rounded-full mx-2'>
-                            <p className='p-2'>Book a Class</p>
+                        <p className='text-indigo-900/50 m-2 p-2'>Login</p>
+                        <button className='rounded-md bg-violet-600 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
+                            <p className='p-2.5'>Book a Class</p>
                         </button>
                         
                     </div>

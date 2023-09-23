@@ -1,8 +1,11 @@
 'use client'; 
 
 import Image from 'next/image';
+import i18n from './i18n';
+import { I18nextProvider } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import BookingCalendar from '../components/BookingCalendar';
+import Hero from '../components/Hero';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -15,10 +18,11 @@ export default function Home() {
   
   return (
     <>
-        <main className="flex flex-col items-center bg-violet-900 bg-center min-h-screen">
-          <h1 className='text-3xl w-fit h-fit'>{t('Explore the World')}</h1>
-          <h2 className='text-3xl w-fit h-fit'>{t('In English!')}</h2>
-        </main>
+    <I18nextProvider i18n={i18n} defaultNS={'translation'}>
+      <main className="flex flex-col items-center bg-center min-h-screen">
+        <Hero />
+      </main>
+    </I18nextProvider>
     </>
   )
 }
