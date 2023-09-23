@@ -26,7 +26,7 @@ function TestHero() {
             Ready to Test Your English Skills?
           </h2>
           <p className="px-12 lg:p-2 m-2 text-center lg:text-start">
-            try our free online English test and get immediate scores and level placement
+            try our free online English test and get immediate scores
           </p>
           <Link href="/freeenglishtest">
             <p className="p-2 m-2 mt-6 inline-block bg-violet-600 px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold text-white hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
