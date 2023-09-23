@@ -87,7 +87,7 @@ function Header () {
                 </div>
             </div>
             
-            <header className="top-0 w-full sticky bg-white drop-shadow-2xl">
+            <header className="header top-0 w-full sticky bg-white drop-shadow-2xl">
                 <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6">
 
                     <div className="flex lg:flex-1 items-center">
