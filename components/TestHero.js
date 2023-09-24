@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { CheckCircleIcon, AcademicCapIcon, LightBulbIcon, BoltIcon } from '@heroicons/react/24/outline';
 import { Popover, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
 function TestHero() {
+    const { t, i18n } = useTranslation();
     function Feature({ icon, text }) {
         return (
           <div className="flex items-start justify-start text-start p-4 m-2">

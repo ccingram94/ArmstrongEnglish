@@ -1,20 +1,27 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import { ChatBubbleLeftRightIcon, MapPinIcon, LanguageIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Popover, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
 
 function Footer() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
+
     return (
       <footer className="bg-gradient-to-br from-violet-800 to-indigo-900 text-white py-8">
         <div className="container mx-auto flex flex-wrap justify-center text-center">
           {/* First Column */}
           <div className="w-full md:w-1/3 m-auto p-6">
             <div className='flex flex-row flex-wrap opacity-80 p-2 justify-center items-center'>
-                <h2 className="text-2xl font-extrabold">Armstrong English</h2>
+                <h2 className="text-2xl font-extrabold">{t('Armstrong English')}</h2>
                 <MapPinIcon className='h-4 w-4 m-2' />
-                <p className='text-md'>United States</p>
+                <p className='text-md'>{t('United States')}</p>
                 <Popover.Group className="flex lg:gap-x-12">
                         <Popover className="relative">
                         <Transition
@@ -29,10 +36,10 @@ function Footer() {
                                     <Popover.Panel className="absolute z-10 w-full bottom-auto mt-[-10rem]
                                     max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                                         <div className="p-4 font-semibold text-purple-900">
-                                            <div onClick={() => close } className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
-                                                <button onClick={() => close } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
-                                                <button className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
-                                                <button className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
+                                            <div className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
+                                                <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
+                                                <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
+                                                <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
                                             </div>
                                         </div>
 

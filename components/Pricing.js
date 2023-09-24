@@ -1,6 +1,10 @@
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next';
+
 
 function Pricing() {
+  const { t, i18n } = useTranslation();
+
     return (
       <div className="bg-white relative w-full">
         <div class="custom-shape-divider-top-1695491509 w-full">
