@@ -36,7 +36,7 @@ function Pricing() {
   
               {/* Tutoring Card */}
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                <h3 className="text-lg font-semibold text-violet-900">Tutoring</h3>
+                <h3 className="text-lg font-semibold text-violet-900">{t('Tutoring')}</h3>
                 <p className="mt-4 text-gray-500">
                   {t('$25 per 25 Minute Class')}<br />
                   {t('$50 per 50 Minute Class')}
