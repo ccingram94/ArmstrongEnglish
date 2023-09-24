@@ -27,7 +27,7 @@ function TeachersSection() {
           </div>
           <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center mt-4">Mrs. Armstrong</h2>
           <p className="text-violet-900 opacity-80 text-center text-sm md:text-base m-2 p-2">
-           {('teacherbio')}
+           {t('teacherbio')}
           </p>
         </div>
       </div>
