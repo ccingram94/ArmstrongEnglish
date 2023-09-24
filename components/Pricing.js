@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 function Pricing() {
   const { t, i18n } = useTranslation();
-
+ 
     return (
       <div className="bg-white relative w-full">
         <div class="custom-shape-divider-top-1695491509 w-full">
@@ -24,13 +24,13 @@ function Pricing() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {/* Lessons Card */}
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                <h3 className="text-lg font-semibold text-violet-900">Online Lessons</h3>
-                <p className="mt-4 text-gray-500">Free</p>
+                <h3 className="text-lg font-semibold text-violet-900">{t('Online Lessons')}</h3>
+                <p className="mt-4 text-gray-500">{t('Free')}</p>
                 <Link
                   href="/lessons"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
-                  Explore Lessons
+                  {t('Explore Lessons')}
                 </Link>
               </div>
   
@@ -38,26 +38,26 @@ function Pricing() {
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
                 <h3 className="text-lg font-semibold text-violet-900">Tutoring</h3>
                 <p className="mt-4 text-gray-500">
-                  $25 per 25 Minute Class<br />
-                  $50 per 50 Minute Class
+                  {t('$25 per 25 Minute Class')}<br />
+                  {t('$50 per 50 Minute Class')}
                 </p>
                 <Link
                   href="/bookaclass"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
-                Explore Classes
+                {t('Explore Classes')}
                 </Link>
               </div>
   
               {/* Group Classes Card */}
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                <h3 className="text-lg font-semibold text-violet-900">Group Classes</h3>
-                <p className="mt-4 text-gray-500">$50 per 50 Minute Class</p>
+                <h3 className="text-lg font-semibold text-violet-900">{t('Group Classes')}</h3>
+                <p className="mt-4 text-gray-500">{t('$50 per 50 Minute Class')}</p>
                 <a
                   href="/bookaclass"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
-                  Explore Classes
+                  {t('Explore Classes')}
                 </a>
               </div>
             </div>

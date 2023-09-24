@@ -5,14 +5,14 @@ import { useTranslation } from 'react-i18next';
 import { CheckCircleIcon, AcademicCapIcon, LightBulbIcon, BoltIcon } from '@heroicons/react/24/outline';
 import { Popover, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
-
+ 
 function TestHero() {
     const { t, i18n } = useTranslation();
     function Feature({ icon, text }) {
         return (
           <div className="flex items-start justify-start text-start p-4 m-2">
             <span className="m-2">{icon}</span>
-            <p className="font-semibold text-white m-2">{text}</p>
+            <p className="font-semibold text-white m-2">{t(`${ text }`)} </p>
           </div>
         );
       }
@@ -25,14 +25,14 @@ function TestHero() {
         {/* Left Column */}
         <div className="flex flex-col text-center justify-center lg:justify-start lg:text-left w-full lg:w-1/2">
           <h2 className="p-2 m-2 text-3xl sm:text-4xl font-semibold">
-            Ready to Test Your English Skills?
+            {t('Ready to Test Your English Skills?')}
           </h2>
           <p className="px-12 lg:p-2 m-2 text-center lg:text-start">
-            try our free online English test and get immediate scores
+            {t('try our free online English test and get immediate scores')}
           </p>
           <Link href="/freeenglishtest">
             <p className="p-2 m-2 mt-6 inline-block bg-violet-600 px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold text-white hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Start Test
+              {t('Start Test')}
             </p>
           </Link>
         </div>

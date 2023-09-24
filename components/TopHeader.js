@@ -75,7 +75,7 @@ function TopHeader () {
                                                 <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English</button>
                                                 <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文</button>
                                                 <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
-                                            </div>
+                                            </div> 
                                         </div>
 
                                     </Popover.Panel>

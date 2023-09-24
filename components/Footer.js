@@ -13,6 +13,16 @@ function Footer() {
     i18n.changeLanguage(lng);
   }
 
+  const languageOptions = {
+    'en': "English (EN)",
+    'cn': "中文 (CN)",
+    'es': "Español (ES)",
+}
+
+  useEffect(() => {
+    setCurrentLang(languageOptions[i18n.language]);
+  }, [i18n.language])
+
     return (
       <footer className="bg-gradient-to-br from-violet-800 to-indigo-900 text-white py-8">
         <div className="container mx-auto flex flex-wrap justify-center text-center">
