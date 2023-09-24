@@ -57,43 +57,43 @@ function Footer() {
                             </Transition>
                             <Popover.Button className="flex items-center gap-x-1 leading-6">
                                 <LanguageIcon className='h-6 w-auto m-2' />
-                                <p className="font-bold text-sm">English (EN) </p>
+                                <p className="font-bold text-sm"> { currentLang } </p>
                                 <ChevronDownIcon className="h-6 w-auto ui-open:rotate-180 ui-open:transform transition-all" />
                             </Popover.Button>
                         </Popover>
                     </Popover.Group>
             </div>
-            <p className="opacity-80 text-sm font-semibold">© 2023 Armstrong English</p>
-            <p className="opacity-80 text-sm font-semibold">All rights reserved.</p>
+            <p className="opacity-80 text-sm font-semibold">{t('© 2023 Armstrong English')}</p>
+            <p className="opacity-80 text-sm font-semibold">{t('All rights reserved.')}</p>
           </div>
   
           {/* Second Column */}
           <div className="w-full md:w-fit m-auto p-6">
-            <h2 className="text-xl font-extrabold mb-4">Learn</h2>
+            <h2 className="text-xl font-extrabold mb-4">{t('Learn')}</h2>
             <ul className="opacity-80 font-semibold">
-              <li>Beginner</li>
-              <li>Intermediate</li>
-              <li>Advanced</li>
+              <li>{t('Beginner')}</li>
+              <li>{t('Intermediate')}</li>
+              <li>{t('Advanced')}</li>
               {/* Add more links as needed */}
             </ul>
           </div>
   
           <div className="w-full md:w-fit m-auto p-6">
-            <h2 className="text-xl font-extrabold mb-4">Classes</h2>
+            <h2 className="text-xl font-extrabold mb-4">{t('Classes')}</h2>
             <ul className='opacity-80 font-semibold'>
-              <li>Book a Class</li>
-              <li>Tutoring</li>
-              <li>Group Classes</li>
+              <li>{t('Book a Class')}</li>
+              <li>{t('Tutoring')}</li>
+              <li>{t('Group Classes')}</li>
               {/* Add more links as needed */}
             </ul>
           </div>
 
           <div className="w-full md:w-fit m-auto p-6">
-            <h2 className="text-xl font-extrabold mb-4">Practice</h2>
+            <h2 className="text-xl font-extrabold mb-4">{t('Practice')}</h2>
             <ul className='opacity-80 font-semibold'>
-              <li>Videos</li>
-              <li>Lessons</li>
-              <li>Quiz</li>
+              <li>{t('Videos')}</li>
+              <li>{t('Lessons')}</li>
+              <li>{t('Quiz')}</li>
               {/* Add more links as needed */}
             </ul>
           </div>
