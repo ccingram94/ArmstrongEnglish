@@ -1,5 +1,6 @@
 'use client'; 
 
+import { useState } from 'react';
 import Image from 'next/image';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
@@ -18,18 +19,20 @@ const lngs = {
 };
 
 export default function Home() {
-  const { t, i18n } = useTranslation('en-US');
+  const { t, i18n } = useTranslation(['en-US', 'zh-CN', 'es-MX']);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   
   return (
     <>
-    <I18nextProvider i18n={i18n} defaultNS={'translation'}>
       <main className="flex flex-col items-center bg-center min-h-screen w-full">
         <Hero />
         <Pricing />
         <TestHero />
         <TeachersSection />
       </main>
-    </I18nextProvider>
     </>
   )
 }

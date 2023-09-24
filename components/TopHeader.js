@@ -3,7 +3,7 @@
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 import {
     ChatBubbleLeftIcon, ChatBubbleLeftEllipsisIcon, ChatBubbleLeftRightIcon,
@@ -18,8 +18,13 @@ import {
 
 
 function TopHeader () {
+    const { t, i18n } = useTranslation(['en-US', 'zh-CN', 'es-MX']);
     const [ mobileOpen, setMobileOpen ] = useState(false);
-    const { t, i18n } = useTranslation('en-US');
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    }
+
     return (
         <>
             <div className='popoverheader flex w-full justify-between items-center bg-gradient-to-br from-indigo-800 to-violet-800 text-white z-2'>
@@ -55,9 +60,9 @@ function TopHeader () {
                                     max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                                         <div className="p-4 font-semibold text-purple-900">
                                             <div onClick={() => close } className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
-                                                <button onClick={() => close } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
-                                                <button className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
-                                                <button className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
+                                                <button onClick={() => i18n.changeLanguage('en-US') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
+                                                <button onClick={() => i18n.changeLanguage('zh-CN') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
+                                                <button onClick={() => i18n.changeLanguage('es-MX') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
                                             </div>
                                         </div>
 

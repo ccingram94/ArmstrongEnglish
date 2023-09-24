@@ -2,7 +2,6 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
@@ -18,6 +17,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    supportedLngs: ['en-US', 'zh-CN', 'es-MX'],
   // Fallback language when a translation is missing for the detected language
     fallbackLng: 'en-US',
   // Enable debug mode during development (turn off in production)
