@@ -2,18 +2,21 @@
 
 import Image from 'next/image';
 import { UserCircleIcon} from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
 import utaustin from '../public/utaustin.jpg';
 import teyl from '../public/teyl.jpg';
 import tefl120 from '../public/tefl120.jpg';
 import tefl150 from '../public/tefl160.jpg';
 
 function TeachersSection() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="flex flex-wrap items-start p-8 bg-violet-800 text-white w-full">
       {/* Teacher profile card */}
       <div className="w-full lg:w-1/2 p-4">
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className='text-violet-900 p-2 m-2 font-extrabold text-center text-2xl'>Teacher</h2>
+          <h2 className='text-violet-900 p-2 m-2 font-extrabold text-center text-2xl'>{t('Teacher')}</h2>
           <div className='flex flex-row flex-wrap justify-center items-center p-2 m-2'>
             <div>
               <Image src={utaustin} width={150} height={150} className='rounded-full shadow-xl' />
@@ -24,9 +27,7 @@ function TeachersSection() {
           </div>
           <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center mt-4">Mrs. Armstrong</h2>
           <p className="text-violet-900 opacity-80 text-center text-sm md:text-base m-2 p-2">
-           Mrs. Armstrong has taught English as a second language for five years.  
-           She currently works in an American public school district in which 40% of students are ESL speakers. 
-           She holds a Bachelor of Arts degree from The University of Texas at Austin and certificates in TEFL (Teaching English as a Foreign Language) and TEYL (Teaching English to Young Learners).
+           {('Mrs. Armstrong has taught English as a second language for five years. She currently works in an American public school district in which 40% of students are ESL speakers. She holds a Bachelor of Arts degree from The University of Texas at Austin and certificates in TEFL (Teaching English as a Foreign Language) and TEYL (Teaching English to Young Learners).')}
           </p>
         </div>
       </div>
