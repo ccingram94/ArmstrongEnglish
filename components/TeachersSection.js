@@ -27,7 +27,7 @@ function TeachersSection() {
           </div>
           <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center mt-4">Mrs. Armstrong</h2>
           <p className="text-violet-900 opacity-80 text-center text-sm md:text-base m-2 p-2">
-           {('Mrs. Armstrong has taught English as a second language for five years. She currently works in an American public school district in which 40% of students are ESL speakers. She holds a Bachelor of Arts degree from The University of Texas at Austin and certificates in TEFL (Teaching English as a Foreign Language) and TEYL (Teaching English to Young Learners).')}
+           {('teacherbio')}
           </p>
         </div>
       </div>
