@@ -7,6 +7,7 @@ import { Fragment, useState, useEffect } from 'react';
 
 function Footer() {
   const { t, i18n } = useTranslation();
+  const [currentLang, setCurrentLang ] = useState('English (EN)');
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
