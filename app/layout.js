@@ -1,4 +1,5 @@
 import './globals.css';
+import i18n from './i18n';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';

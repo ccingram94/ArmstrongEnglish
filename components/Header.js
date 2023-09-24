@@ -21,7 +21,7 @@ import {
     { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '#', icon: ChatBubbleLeftIcon },
     { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '#', icon: ChatBubbleLeftEllipsisIcon },
     { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '#', icon: ChatBubbleLeftRightIcon },
-    { name: 'Online Class', description: 'study with our teachers', href: '#', icon: AcademicCapIcon },
+    { name: 'Classes', description: 'study with our teachers', href: '#', icon: AcademicCapIcon },
   ]
   const learnCTA = [
     { name: 'Videos', href: '#', icon: PlayCircleIcon },
@@ -30,7 +30,7 @@ import {
 
 const classOptions = [
     { name: 'Tutoring', description: '1-on-1 online classes (25 or 50 minutes)', href: '#', icon: UserIcon },
-    { name: 'Group Courses', description: 'up to 6 students per class (50 minutes)', href: '#', icon: UserGroupIcon },
+    { name: 'Group Classes', description: 'up to 6 students per class (50 minutes)', href: '#', icon: UserGroupIcon },
 ]
 
   const classCTA = [
@@ -41,7 +41,7 @@ const classOptions = [
 
 function Header () {
     const [ mobileOpen, setMobileOpen ] = useState(false);
-    const { t, i18n } = useTranslation('en-US');
+    const { t, i18n } = useTranslation();
     return (
         <>
             <TopHeader />
@@ -66,7 +66,7 @@ function Header () {
                     <Popover.Group className="hidden lg:flex lg:gap-x-12">
                         <Popover className="relative">
                             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                                Learn
+                                {t('Learn')}
                                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                             </Popover.Button>
                             <Transition
@@ -90,10 +90,10 @@ function Header () {
                                             </div>
                                             <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900">
-                                                {item.name}
+                                                { t(`${ item.name }`) }
                                                 <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600">{item.description}</p>
+                                                <p className="mt-1 text-gray-600">{ t(`${ item.description }`) }</p>
                                             </div>
                                             </div>
                                         ))}
@@ -106,7 +106,7 @@ function Header () {
                                             className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-violet-900 hover:bg-violet-100"
                                             >
                                             <item.icon className="h-5 w-5 flex-none text-violet-400" aria-hidden="true" />
-                                            {item.name}
+                                            { t(`${ item.name }`) }
                                             </a>
                                         ))}
                                         </div>
@@ -115,7 +115,7 @@ function Header () {
                         </Popover>
                         <Popover className="relative">
                             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                                Classes
+                                {t('Classes')}
                                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                             </Popover.Button>
                             <Transition
@@ -139,10 +139,10 @@ function Header () {
                                                 </div>
                                                 <div className="flex-auto">
                                                     <a href={item.href} className="block font-semibold text-gray-900">
-                                                    {item.name}
+                                                    { t(`${ item.name }`) }
                                                     <span className="absolute inset-0" />
                                                     </a>
-                                                    <p className="mt-1 text-gray-600">{item.description}</p>
+                                                    <p className="mt-1 text-gray-600">{ t(`${ item.description }`) }</p>
                                                 </div>
                                             </div>
                                         ))}
@@ -155,21 +155,21 @@ function Header () {
                                             className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-violet-900 hover:bg-violet-100"
                                             >
                                             <item.icon className="h-5 w-5 flex-none text-violet-400" aria-hidden="true" />
-                                            {item.name}
+                                            { t(`${ item.name }`) }
                                             </a>
                                         ))}
                                         </div>
                                     </Popover.Panel>
                             </Transition>
                         </Popover>
-                        <Link href="/" className='text-sm font-semibold leading-6'>Teachers</Link>
+                        <Link href="/" className='text-sm font-semibold leading-6'>{t('Teachers')}</Link>
                     </Popover.Group>
                     
 
                     <div className='hidden lg:flex lg:flex-1 m-2 items-center justify-end text-sm font-semibold leading-6'>
-                        <p className='text-indigo-900/50 m-2 p-2'>Login</p>
+                        <p className='text-indigo-900/50 m-2 p-2'>{t('Login')}</p>
                         <button className='rounded-md bg-violet-600 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
-                            <p className='p-2.5'>Book a Class</p>
+                            <p className='p-2.5'>{t('Book a Class')}</p>
                         </button>
                         
                     </div>

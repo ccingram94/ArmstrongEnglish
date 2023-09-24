@@ -17,14 +17,9 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    supportedLngs: ['en-US', 'zh-CN', 'es-MX'],
+    supportedLngs: ['en', 'cn', 'es'],
   // Fallback language when a translation is missing for the detected language
-    fallbackLng: 'en-US',
-  // Enable debug mode during development (turn off in production)
-    debug: true,
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    }
+    fallbackLng: 'en',
   });
 
 

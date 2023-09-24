@@ -1,13 +1,13 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
-import { useTranslation, withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import {
     ChatBubbleLeftIcon, ChatBubbleLeftEllipsisIcon, ChatBubbleLeftRightIcon,
-    AcademicCapIcon, Bars3Icon, MapPinIcon,
+    AcademicCapIcon, Bars3Icon, MapPinIcon, XMarkIcon,
     UserIcon, UserGroupIcon, LanguageIcon,
   } from '@heroicons/react/24/outline';
 
@@ -18,12 +18,23 @@ import {
 
 
 function TopHeader () {
-    const { t, i18n } = useTranslation(['en-US', 'zh-CN', 'es-MX']);
+    const { t, i18n } = useTranslation();
+    const [currentLang, setCurrentLang ] = useState('English (EN)');
     const [ mobileOpen, setMobileOpen ] = useState(false);
 
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
     }
+
+    const languageOptions = {
+        'en': "English (EN)",
+        'cn': "中文 (CN)",
+        'es': "Español (ES)",
+    }
+
+    useEffect(() => {
+        setCurrentLang(languageOptions[i18n.language]);
+    }, [i18n.language])
 
     return (
         <>
@@ -34,9 +45,9 @@ function TopHeader () {
                 </div>
                 <div className="flex flex-auto justify-center items-center hidden lg:flex">
                     <AcademicCapIcon className='h-4 w-auto m-2' />
-                    <p className="font-bold text-sm">classes available now </p>
+                    <p className="font-bold text-sm">{t('classes available now')}</p>
                     <button className='bg-white hover:bg-opacity-100 bg-opacity-80 transition-all rounded-full mx-2'>
-                        <p className="font-bold text-sm text-violet-900 px-2 transition-all">see calendar</p>
+                        <p className="font-bold text-sm text-violet-900 px-2 transition-all">{t('see calendar')}</p>
                     </button>
                 </div>
                 <div className="popoverheader flex flex-auto justify-center items-center">
@@ -44,8 +55,9 @@ function TopHeader () {
                         <Popover className="relative">
                             <Popover.Button className="flex items-center gap-x-1 leading-6">
                                 <LanguageIcon className='h-6 w-auto m-2' />
-                                <p className="font-bold text-sm">English (EN) </p>
-                                <ChevronDownIcon className="h-6 w-auto ui-open:rotate-180 ui-open:transform transition-all" />
+                                <p className="font-bold text-sm">{ currentLang }</p>
+                                <ChevronDownIcon className="h-6 w-auto ui-open:hidden ui-open:transform" />
+                                <XMarkIcon className="h-6 w-auto hidden ui-open:block ui-open:transform" />
                             </Popover.Button>
                             <Transition
                                 as={Fragment}
@@ -60,9 +72,9 @@ function TopHeader () {
                                     max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                                         <div className="p-4 font-semibold text-purple-900">
                                             <div onClick={() => close } className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
-                                                <button onClick={() => i18n.changeLanguage('en-US') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
-                                                <button onClick={() => i18n.changeLanguage('zh-CN') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
-                                                <button onClick={() => i18n.changeLanguage('es-MX') } className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
+                                                <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English</button>
+                                                <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文</button>
+                                                <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
                                             </div>
                                         </div>
 
