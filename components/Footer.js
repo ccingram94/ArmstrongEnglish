@@ -3,8 +3,7 @@
 import { useTranslation } from 'react-i18next';
 import { ChatBubbleLeftRightIcon, MapPinIcon, LanguageIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Popover, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
-
+import { Fragment, useState, useEffect } from 'react';
 
 function Footer() {
   const { t, i18n } = useTranslation();
