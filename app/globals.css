@@ -26,15 +26,10 @@ button {
 }
 
 
-
-
 /* React-Calendar CSS */
 
 .react-calendar {
     z-index: 1;
-    position: sticky;
-    max-width: 90vw;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,9 +37,6 @@ button {
     text-align: center;
     color: #110621;
     border-radius: 10px;
-    line-height: 2em;
-    margin: 1em;
-    padding: 2px;
 }
 
 .react-calendar__navigation {

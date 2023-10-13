@@ -18,10 +18,10 @@ import {
   } from '@heroicons/react/20/solid';
 
   const learnOptions = [
-    { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '#', icon: ChatBubbleLeftIcon },
-    { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '#', icon: ChatBubbleLeftEllipsisIcon },
-    { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '#', icon: ChatBubbleLeftRightIcon },
-    { name: 'Classes', description: 'study with our teachers', href: '#', icon: AcademicCapIcon },
+    { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '/class', icon: ChatBubbleLeftIcon },
+    { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '/class', icon: ChatBubbleLeftEllipsisIcon },
+    { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '/class', icon: ChatBubbleLeftRightIcon },
+    { name: 'Classes', description: 'study with our teachers', href: '/class', icon: AcademicCapIcon },
   ]
   const learnCTA = [
     { name: 'Videos', href: '#', icon: PlayCircleIcon },
@@ -29,8 +29,8 @@ import {
   ]
 
 const classOptions = [
-    { name: 'Tutoring', description: '1-on-1 online classes (25 or 50 minutes)', href: '#', icon: UserIcon },
-    { name: 'Group Classes', description: 'up to 6 students per class (50 minutes)', href: '#', icon: UserGroupIcon },
+    { name: 'Tutoring', description: '1-on-1 online classes (25 or 50 minutes)', href: '/class', icon: UserIcon },
+    { name: 'Group Classes', description: 'up to 6 students per class (50 minutes)', href: '/class', icon: UserGroupIcon },
 ]
 
   const classCTA = [
@@ -85,8 +85,8 @@ function Header () {
                                             key={item.name}
                                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                             >
-                                            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-violet-600" aria-hidden="true" />
+                                            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-violet-500/30 group-hover:bg-white">
+                                                <item.icon className="h-6 w-6 text-white group-hover:text-violet-600" aria-hidden="true" />
                                             </div>
                                             <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900">
@@ -134,8 +134,8 @@ function Header () {
                                             key={item.name}
                                             className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                                             >
-                                                <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-violet-600" aria-hidden="true" />
+                                                <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-violet-500/30 group-hover:bg-white">
+                                                    <item.icon className="h-6 w-6 text-white group-hover:text-violet-600" aria-hidden="true" />
                                                 </div>
                                                 <div className="flex-auto">
                                                     <a href={item.href} className="block font-semibold text-gray-900">
