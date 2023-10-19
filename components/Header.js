@@ -18,7 +18,7 @@ import {
   } from '@heroicons/react/20/solid';
 
   const learnOptions = [
-    { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '/class', icon: ChatBubbleLeftIcon },
+    { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '/beginner', icon: ChatBubbleLeftIcon },
     { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '/class', icon: ChatBubbleLeftEllipsisIcon },
     { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '/class', icon: ChatBubbleLeftRightIcon },
     { name: 'Classes', description: 'study with our teachers', href: '/class', icon: AcademicCapIcon },
@@ -49,10 +49,10 @@ function Header () {
                 <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6">
 
                     <div className="flex lg:flex-1 items-center">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <Link href="/" className='-m-1.5 p-1.5'>
                             <span className="sr-only">Armstrong English</span>
                             <ChatBubbleLeftRightIcon className="h-8 w-auto text-violet-900" />
-                        </a>
+                        </Link>
                     </div>
 
                     <div className='flex lg:hidden items-center'>
