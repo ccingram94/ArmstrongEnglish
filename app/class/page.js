@@ -8,10 +8,6 @@ function Class() {
       <div className="w-full">
         <div className="flex flex-row flex-wrap container mx-auto w-full">
           <BookingCalendar />
-          <div className="p-2 m-2 flex flex-col w-full md:basis-1/3 justify-center text-center h-full bg-white rounded-xl shadow-2xl">
-            <h2 className="p-2 text-3xl font-extrabold text-violet-800">Today's Date</h2>
-            <p className="p-2 font-bold text-violet-800/80">classes available today:</p>
-          </div>
         </div>
       </div>
 
