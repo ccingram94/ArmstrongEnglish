@@ -15,7 +15,7 @@ function Hero () {
                     <p class="mt-6 text-lg leading-8 text-violet-50">{t('book a class or try our free online English lessons')}</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <Link href="/" class="p-2 rounded-md bg-violet-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{t('Classes')}</Link>
-                        <Link href="/" class="p-2 rounded-xl text-sm font-semibold leading-6 text-violet-50 hover:ring-2 ring-white/30 transition-all"> {t('Free Lessons')} <ArrowLongRightIcon className='h-6 w-6 inline' /></Link>
+                        <Link href="/beginner" class="p-2 rounded-xl text-sm font-semibold leading-6 text-violet-50 hover:ring-2 ring-white/30 transition-all"> {t('Free Lessons')} <ArrowLongRightIcon className='h-6 w-6 inline' /></Link>
                     </div>
                 </div>
             </div>
