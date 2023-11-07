@@ -14,10 +14,14 @@ function Beginner() {
       <div className="h-full flex flex-row flex-wrap justify-center p-2 m-2">
         <div className="h-full lg:w-1/2">
           <h3 className="text-xl p-4 m-2 font-bold text-indigo-100/90">Level A1 Lessons</h3>
+          <p className="text-sm p-2 m-2 font-bold text-indigo-100">CEFR A1 is the first step in learning English.  Students can understand and use basic words and sentences for everyday conversations.</p>
           <div className="flex flex-wrap justify-center container mx-auto w-fit">
           { Object.keys(a1data).map((key, index) => (
-                <div className="bg-white/90 rounded-xl shadow-xl p-2 m-2" key={index}>
-                  <p className="text-xl font-extrabold p-2 text-indigo-700">
+                <div className="bg-white/90 rounded-xl shadow-xl p-6 m-2" key={index}>
+                  <p className="text-sm font-extrabold text-indigo-700/80">
+                  Lesson { a1data[key].id }
+                  </p>
+                  <p className="text-xl font-extrabold text-indigo-700">
                   { a1data[key].title }
                   </p>
                 </div>
@@ -35,6 +39,7 @@ function Beginner() {
         </div>
         <div className="h-full lg:w-1/2">
           <h3 className="text-xl p-4 m-2 font-bold text-indigo-100/90">Level A2 Lessons</h3>
+          <p className="text-sm p-2 m-2 font-bold text-indigo-100">CEFR A2 is the next level of English language learning, where learners can handle simple, everyday tasks and have basic conversations about familiar topics.</p>
           <h3 className="text-xl font-bold text-indigo-100/70">Coming Soon</h3>
           <div className="flex flex-wrap pb-12 justify-center container mx-auto w-fit">
             <LockClosedIcon className="h-32 m-4 text-indigo-100/70" />

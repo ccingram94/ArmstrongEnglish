@@ -14,6 +14,7 @@ function Advanced() {
       <div className="h-full flex flex-row flex-wrap justify-center p-2 m-2">
         <div className="h-full lg:w-1/2">
           <h3 className="text-xl p-4 m-2 font-bold text-indigo-100/90">Level C1 Lessons</h3>
+          <p className="text-sm p-2 m-2 font-bold text-indigo-100">CEFR C1 signifies an advanced level of English proficiency, where learners can understand and use complex language, engage in sophisticated conversations, and handle demanding tasks in academic and professional contexts.</p>
           <h3 className="text-xl font-bold text-indigo-100/70">Coming Soon</h3>
           <div className="flex flex-wrap pb-12 justify-center container mx-auto w-fit">
             <LockClosedIcon className="h-32 m-4 text-indigo-100/70" />
@@ -21,6 +22,7 @@ function Advanced() {
         </div>
         <div className="h-full lg:w-1/2">
           <h3 className="text-xl p-4 m-2 font-bold text-indigo-100/90">Level C2 Lessons</h3>
+          <p className="text-sm p-2 m-2 font-bold text-indigo-100">CEFR C2 represents the highest level of English proficiency, where learners have near-native fluency, can understand and produce complex texts, and are capable of engaging in nuanced and specialized communication, often on par with native speakers.</p>
           <h3 className="text-xl font-bold text-indigo-100/70">Coming Soon</h3>
           <div className="flex flex-wrap pb-12 justify-center container mx-auto w-fit">
             <LockClosedIcon className="h-32 m-4 text-indigo-100/70" />
