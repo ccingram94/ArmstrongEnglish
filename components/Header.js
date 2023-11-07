@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
 import { useTranslation } from 'react-i18next';
@@ -41,7 +41,24 @@ const classOptions = [
 
 function Header () {
     const [ mobileOpen, setMobileOpen ] = useState(false);
+    const [ langOpen, setLangOpen ] = useState(false);
     const { t, i18n } = useTranslation();
+    const [currentLang, setCurrentLang ] = useState('English (EN)');
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+      }
+
+    const languageOptions = {
+    'en': "English",
+    'cn': "中文",
+    'es': "Español",
+    }
+
+    useEffect(() => {
+        setCurrentLang(languageOptions[i18n.language]);
+    }, [i18n.language])
+
     return (
         <>
             <TopHeader />
@@ -57,11 +74,13 @@ function Header () {
 
                     <div className='flex lg:hidden items-center'>
                         <button type='button' className='m-2 inline-flex items-center justify-center p-2'
-                        onClick={() => setMobileOpen(true)}>
+                        onClick={() => setMobileOpen(!mobileOpen)}>
                             <span className="sr-only">open main menu</span>
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            { !mobileOpen &&  <Bars3Icon className="h-6 w-6" aria-hidden="true" /> }
+                            { mobileOpen && <ChevronUpIcon className="h-6 w-6" aria-hidden="true" /> }
                         </button>
                     </div>
+
 
                     <Popover.Group className="hidden lg:flex lg:gap-x-12">
                         <Popover className="relative">
@@ -175,6 +194,24 @@ function Header () {
                     </div>
 
                 </nav>
+
+            { mobileOpen && 
+                <div className='bg-white w-full'>
+                        <div className='bg-violet-900 text-white w-full flex flex-row justify-center items-center'>
+                            <LanguageIcon className='h-8 opacity-50' />
+                            <p className="font-extrabold opacity-50 text-lg p-2">{ currentLang }</p>
+                            <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 text-sm font-bold rounded-xl opacity-80 hover:opacity-100 transition-all'> 🇺🇸 English</button>
+                            <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 text-sm font-bold rounded-xl opacity-80 hover:opacity-100 transition-all'> 🇨🇳 中文</button>
+                            <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 text-sm font-bold rounded-xl opacity-80 hover:opacity-100 hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
+                        </div>
+                        <div className='flex flex-col justify-center items-center text-violet-900'>
+                            <Link href="/beginner" className='p-2 m-2 font-extrabold text-lg'>Learn</Link>
+                            <Link href="/class" className='p-2 m-2 font-extrabold text-lg'>Classes</Link>
+                            <Link href="/" className='p-2 m-2 font-extrabold text-lg'>Teacher</Link>
+                        </div>
+                    </div>
+            }
+
             </header>
         </>
     )
