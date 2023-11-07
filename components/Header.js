@@ -19,8 +19,8 @@ import {
 
   const learnOptions = [
     { name: 'Beginner', description: 'CEFR Level A1 and A2', href: '/beginner', icon: ChatBubbleLeftIcon },
-    { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '/class', icon: ChatBubbleLeftEllipsisIcon },
-    { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '/class', icon: ChatBubbleLeftRightIcon },
+    { name: 'Intermediate', description: 'CEFR Level B1 and B2', href: '/intermediate', icon: ChatBubbleLeftEllipsisIcon },
+    { name: 'Advanced', description: 'CEFR Level C1 and C2', href: '/advanced', icon: ChatBubbleLeftRightIcon },
     { name: 'Classes', description: 'study with our teachers', href: '/class', icon: AcademicCapIcon },
   ]
   const learnCTA = [
