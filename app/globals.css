@@ -41,7 +41,6 @@ button {
 
 .react-calendar__navigation {
     color: #5b21b6;
-    min-width: fit-content;
     margin-bottom: 20px;
     padding: 10px;
     width: 90%;
