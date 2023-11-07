@@ -38,11 +38,10 @@ function Pricing() {
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
                 <h3 className="text-lg font-semibold text-violet-900">{t('Tutoring')}</h3>
                 <p className="mt-4 text-gray-500">
-                  {t('$25 per 25 Minute Class')}<br />
-                  {t('$50 per 50 Minute Class')}
+                  {t('$25 per 25 Minute Class')}
                 </p>
                 <Link
-                  href="/bookaclass"
+                  href="/class"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
                 {t('Explore Classes')}
@@ -51,13 +50,13 @@ function Pricing() {
   
               {/* Group Classes Card */}
               <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                <h3 className="text-lg font-semibold text-violet-900">{t('Group Classes')}</h3>
-                <p className="mt-4 text-gray-500">{t('$50 per 50 Minute Class')}</p>
+                <h3 className="text-lg font-semibold text-violet-900">{t('Quiz')}</h3>
+                <p className="mt-4 text-gray-500">{t('Free')}</p>
                 <a
-                  href="/bookaclass"
+                  href="/class"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
-                  {t('Explore Classes')}
+                  {t('Start Test')}
                 </a>
               </div>
             </div>

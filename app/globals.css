@@ -44,20 +44,16 @@ button {
     min-width: fit-content;
     margin-bottom: 20px;
     padding: 10px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: bolder;
-	font-size: 2.25rem; /* 36px */
-    line-height: 1.75rem; /* 28px */
+	font-size: 2rem; /* 36px */
+    line-height: 1.5rem; /* 28px */
     text-align: center;
 }
 
-.react-calendar__navigation button:enabled:hover,
-.react-calendar__navigation button:enabled:focus {
-    background-color: #f8f8fa;
-}
 
 .react-calendar__navigation button[disabled] {
     background-color: white;
