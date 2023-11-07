@@ -205,9 +205,9 @@ function Header () {
                             <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 text-sm font-bold rounded-xl opacity-80 hover:opacity-100 hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
                         </div>
                         <div className='flex flex-col justify-center items-center text-violet-900'>
-                            <Link href="/beginner" className='p-2 m-2 font-extrabold text-lg'>Learn</Link>
-                            <Link href="/class" className='p-2 m-2 font-extrabold text-lg'>Classes</Link>
-                            <Link href="/" className='p-2 m-2 font-extrabold text-lg'>Teacher</Link>
+                            <Link href="/beginner" className='p-2 m-2 font-extrabold text-lg'>{t('Learn')}</Link>
+                            <Link href="/class" className='p-2 m-2 font-extrabold text-lg'>{t('Classes')}</Link>
+                            <Link href="/" className='p-2 m-2 font-extrabold text-lg'>{t('Teachers')}</Link>
                         </div>
                     </div>
             }
