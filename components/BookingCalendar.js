@@ -2,11 +2,15 @@
 
 import { useState } from 'react';
 import Calendar from 'react-calendar';
-import { format, add, formatDistance, formatRelative, subDays, addDays } from 'date-fns';
-
+import { format, parse, addMinutes, setHours, formatDistance, formatRelative, subDays, addDays, toDate } from 'date-fns';
 
 function BookingCalendar() {
   const [value, onChange] = useState(new Date());
+
+  const slot1 = setHours(value, 11)
+  const slot2 = addMinutes(slot1, 30)
+  const slot3 = addMinutes (slot2, 30)
+  const slot4 = addMinutes(slot3, 30)
 
   return (
     <>
@@ -19,6 +23,18 @@ function BookingCalendar() {
         <h2 className="p-2 text-3xl font-extrabold text-violet-800">{ format(value, 'iiii') }</h2>
         <h2 className="p-2 text-3xl font-extrabold text-violet-800">{ format(value, 'MMMM d, yyyy') }</h2>
         <p className="p-2 font-bold text-violet-800/80">classes available today:</p>
+        <div className='bg-violet-900 text-white p-2 m-2'>
+          <p className='p-2'>{format(slot1, 'hh:mm a')}</p>
+        </div>
+        <div className='bg-violet-900 text-white p-2 m-2'>
+          <p className='p-2'>{format(slot2, 'hh:mm a')}</p>
+        </div>
+        <div className='bg-violet-900 text-white p-2 m-2'>
+          <p className='p-2'>{format(slot3, 'hh:mm a')}</p>
+        </div>
+        <div className='bg-violet-900 text-white p-2 m-2'>
+          <p className='p-2'>{format(slot4, 'hh:mm a')}</p>
+        </div>
       </div>
     </>
   );

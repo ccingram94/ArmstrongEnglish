@@ -46,9 +46,11 @@ function TopHeader () {
                 <div className="flex flex-auto justify-center items-center hidden lg:flex">
                     <AcademicCapIcon className='h-4 w-auto m-2' />
                     <p className="font-bold text-sm">{t('classes available now')}</p>
+                    <Link href="class">
                     <button className='bg-white hover:bg-opacity-100 bg-opacity-80 transition-all rounded-full mx-2'>
                         <p className="font-bold text-sm text-violet-900 px-2 transition-all">{t('see calendar')}</p>
                     </button>
+                    </Link>
                 </div>
                 <div className="popoverheader flex flex-auto justify-center items-center">
                     <Popover.Group className="hidden lg:flex lg:gap-x-12">
