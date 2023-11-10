@@ -9,7 +9,7 @@ function Hero () {
     const { t, i18n } = useTranslation();
     return (
         <div className='w-full h-full bg-violet-900'>
-        <div className="bg-hero bg-cover w-full relative isolate">
+        <div className="bg-hero bg-cover bg-center w-full relative isolate">
             <div class="w-full bg-gradient-to-b from-violet-900/30 to-violet-800">
                 <div class="flex flex-col items-center text-center p-4">
                     <h1 class="text-4xl pt-6 font-bold tracking-tight text-violet-100 sm:text-6xl">{t('Explore the World')}</h1>
