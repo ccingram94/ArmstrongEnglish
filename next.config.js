@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['cloudfront.net'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'd20etpig7obrzj.cloudfront.net',
+        port: '',
+        pathname: '',
       },
+    ],
+  },
 }
 
 module.exports = nextConfig
