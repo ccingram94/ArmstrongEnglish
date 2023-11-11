@@ -12,7 +12,7 @@ function Hero () {
         <div className="bg-hero bg-cover bg-center w-full relative isolate">
             <div class="w-full bg-gradient-to-b from-violet-900/30 to-violet-800">
                 <div class="flex flex-col items-center text-center p-4">
-                    <h1 class="text-4xl pt-6 pt-24 font-bold tracking-tight text-white sm:text-6xl">{t('Explore the World')}</h1>
+                    <h1 class="text-4xl pt-6 mt-24 font-bold tracking-tight text-white sm:text-6xl">{t('Explore the World')}</h1>
                     <h1 class="text-4xl pb-6 font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white to-violet-100 sm:text-6xl">{t('In English!')}</h1>
                     <p class="mt-6 text-lg max-w-sm text-center leading-8 text-white/90">{t('book a class or try our free online English lessons')}</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
