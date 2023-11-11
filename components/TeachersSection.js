@@ -31,7 +31,7 @@ function TeachersSection() {
           <div className='flex flex-row flex-wrap justify-center items-center lg:w-1/2'>
             <Image src={'https://d20etpig7obrzj.cloudfront.net/teyl.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl' />
             <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl120.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl'  />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl150.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl'  />
+            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl160.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl'  />
           </div>
       </div>
     </div>

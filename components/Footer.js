@@ -24,8 +24,9 @@ function Footer() {
   }, [i18n.language])
 
     return (
-      <footer className="bg-gradient-to-br from-violet-800 to-indigo-900 text-white py-8">
-        <div className="container mx-auto flex flex-wrap justify-center text-center">
+      <footer className='bg-hero bg-cover bg-center lg:bg-top'>
+      <div className="bg-violet-900/90 text-white py-8">
+        <div className="flex flex-wrap justify-center text-center">
           {/* First Column */}
           <div className="w-full md:w-1/3 m-auto p-6">
             <div className='flex flex-row flex-wrap opacity-80 p-2 justify-center items-center'>
@@ -99,6 +100,7 @@ function Footer() {
           </div>
 
         </div>
+      </div>
       </footer>
     );
   }
