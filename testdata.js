@@ -14,4 +14,4 @@ const questions = [
     // Add more questions here
   ];
 
-export default questions;
+export default questions ;

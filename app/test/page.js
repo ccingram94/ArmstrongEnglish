@@ -1,5 +1,6 @@
 'use client';
 import PlacementTest from "../../components/PlacementTest";
+import questions from '../../testdata';
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { useTranslation } from 'react-i18next';
 
@@ -13,7 +14,7 @@ function Test() {
         </div>
       </div>
       <div>
-        <PlacementTest />
+        <PlacementTest questions={questions} />
       </div>
   </div>
   );
