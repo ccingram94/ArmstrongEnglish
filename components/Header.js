@@ -8,7 +8,7 @@ import TopHeader from './TopHeader';
 
 import {
     ChatBubbleLeftIcon, ChatBubbleLeftEllipsisIcon, ChatBubbleLeftRightIcon,
-    AcademicCapIcon, Bars3Icon, MapPinIcon,
+    AcademicCapIcon, Bars3Icon, MapPinIcon, SparklesIcon,
     UserIcon, UserGroupIcon, LanguageIcon,
   } from '@heroicons/react/24/outline';
 
@@ -24,7 +24,7 @@ import {
     { name: 'Classes', description: 'study with our teachers', href: '/class', icon: AcademicCapIcon },
   ]
   const learnCTA = [
-    { name: 'Videos', href: '#', icon: PlayCircleIcon },
+    { name: 'English Test', href: '/test', icon: SparklesIcon },
     { name: 'Practice', href: '#', icon: BookOpenIcon },
   ]
 
