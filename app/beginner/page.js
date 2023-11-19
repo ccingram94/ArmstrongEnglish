@@ -1,5 +1,5 @@
 'use client';
-import BookingCalendar from "../../components/BookingCalendar";
+import Link from "next/link";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { useTranslation } from 'react-i18next';
 import a1_lessons from '../../data'
@@ -22,7 +22,7 @@ function Beginner() {
           <p className="text-sm p-2 m-2 font-bold text-white/90">{t('CEFR A1 is the first step in learning English.  Students can understand and use basic words and sentences for everyday conversations.')} </p>
           <div className="flex flex-wrap justify-center container mx-auto w-fit">
           { Object.keys(a1data).map((key, index) => (
-                <div className="bg-white/90 rounded-xl shadow-xl p-6 m-2" key={index}>
+                <Link href={"/lesson/" + index} className="bg-white/90 rounded-xl shadow-xl p-6 m-2" key={index}>
                   <p className="text-sm font-extrabold text-indigo-700/80">
                   {t('Lesson')} { a1data[key].id }
                   </p>
@@ -32,7 +32,7 @@ function Beginner() {
                   <p className="text-sm font-bold text-indigo-700/50">
                     {t(`${a1data[key].title}`)}
                   </p>
-                </div>
+                </Link>
             ))}
           </div>
           <div className="flex flex-wrap justify-center container mx-auto w-fit m-2">
