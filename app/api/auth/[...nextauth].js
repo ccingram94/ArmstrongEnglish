@@ -1,7 +1,7 @@
 import { DynamoDB, DynamoDBClientConfig } from "@aws-sdk/client-dynamodb"
 import { DynamoDBDocument } from "@aws-sdk/lib-dynamodb"
 import NextAuth from "next-auth";
-import Providers from "next-auth/providers";
+import { EmailProvider } from "next-auth/providers/email";
 import { DynamoDBAdapter } from "@auth/dynamodb-adapter"
 
 const DynamoDBClientConfig = {
@@ -23,9 +23,16 @@ const DynamoDBClientConfig = {
   export default NextAuth({
     // Configure one or more authentication providers
     providers: [
-      Providers.Email({
-        server: process.env.EMAIL_SERVER,
-        from: process.env.EMAIL_FROM,
+      EmailProvider({
+        server: {
+          host: process.env.EMAIL_SERVER_HOST,
+          port: process.env.EMAIL_SERVER_PORT,
+          auth: {
+            user: process.env.EMAIL_SERVER_USER,
+            pass: process.env.EMAIL_SERVER_PASSWORD
+          }
+        },
+        from: process.env.EMAIL_FROM
       }),
       // ...add more providers here
     ],

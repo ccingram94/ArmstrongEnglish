@@ -23,13 +23,11 @@ export default function Home() {
   };
   
   return (
-    <>
       <main className="flex flex-col items-center bg-center min-h-screen w-full">
         <Hero />
         <Pricing />
         <TestHero />
         <TeachersSection />
       </main>
-    </>
   )
 }

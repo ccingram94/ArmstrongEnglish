@@ -31,8 +31,8 @@ function DisplayTest( currentQuestion ) {
     
     if (!started && !finished) {
         return (
-        <div className='flex flex-col text-center items-center w-screen min-h-screen'>
-        <div className='flex flex-col text-center items-center w-full lg:w-2/3 text-violet-900 bg-white rounded-md shadow-xl p-2 m-4'>
+        <div className='flex flex-col text-center items-center w-screen'>
+        <div className='flex flex-col text-center items-center w-full lg:w-2/3 text-violet-900 bg-white rounded-md p-2 m-4'>
             <div className='flex flex-col text-start text-sm items-center rounded-xl'>
                 <h3 className='p-2 text-lg font-extrabold'>CEFR Fluency Levels</h3>
                 <div className='flex flex-row w-full bg-violet-50'>
@@ -69,8 +69,8 @@ function DisplayTest( currentQuestion ) {
 
     else if (started && !finished) {
         return (
-        <div className='flex flex-col text-center items-center w-screen min-h-screen'>
-        <div className='flex flex-col text-center items-center w-full lg:w-2/3 text-violet-900 bg-white rounded-md shadow-xl p-2 m-4'>
+        <div className='flex flex-col text-center items-center w-screen'>
+        <div className='flex flex-col text-center items-center w-full lg:w-2/3 text-violet-900 bg-white rounded-md p-2 m-4'>
             <div className='flex flex-col w-full text-start text-sm items-center rounded-xl'>
                 <h3 className='p-4 m-2 text-xl font-extrabold'> {questiondata.questionText} </h3>
                 <div className='flex flex-row flex-wrap w-full justify-center items-center text-center'>

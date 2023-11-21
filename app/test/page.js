@@ -7,13 +7,9 @@ import { useTranslation } from 'react-i18next';
 function Test() {
   const { t, i18n } = useTranslation();
   return (
-    <div className="bg-violet-900 w-full text-center justify-center items-center">
-      <div className="w-full h-full bg-hero bg-cover bg-center">
-        <div className="bg-violet-900/90">
-          <h1 className="text-3xl p-2 pt-6 font-extrabold text-white">Free Online English Test</h1>
-        </div>
-      </div>
-      <div>
+    <div className="bg-hero bg-cover bg-center w-full text-center justify-center items-center">
+      <div className="w-full h-full bg-violet-900/90 min-h-screen">
+        <h1 className="text-3xl p-2 pt-6 font-extrabold text-white">Free Online English Test</h1>
         <PlacementTest questions={questions} />
       </div>
   </div>

@@ -3,6 +3,7 @@ import i18n from './i18n';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Provider from '../components/Provider';
 
 export const metadata = {
   title: 'Armstrong English',
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
     <>
     <html lang='en'>
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
     </>
