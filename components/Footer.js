@@ -46,14 +46,15 @@ function Footer() {
                                 >
                                     <Popover.Panel className="absolute z-10 w-full bottom-auto mt-[-10rem]
                                     max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                                      {({ close }) => (
                                         <div className="p-4 font-semibold text-purple-900">
                                             <div className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
-                                                <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
-                                                <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
-                                                <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
+                                                <button onClick={() => {i18n.changeLanguage('en'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English (EN)</button>
+                                                <button onClick={() => {i18n.changeLanguage('cn'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文 (CN)</button>
+                                                <button onClick={() => {i18n.changeLanguage('es'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español (ES)</button>
                                             </div>
                                         </div>
-
+                                      )}
                                     </Popover.Panel>
                             </Transition>
                             <Popover.Button className="flex items-center gap-x-1 leading-6">

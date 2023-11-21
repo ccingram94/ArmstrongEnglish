@@ -72,14 +72,15 @@ function TopHeader () {
                                 >
                                     <Popover.Panel className="absolute top-full z-10 mt-3 w-full
                                     max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                                        {({ close }) => (
                                         <div className="p-4 font-semibold text-purple-900">
                                             <div onClick={() => close } className='text-sm group relative flex flex-col items-start gap-x-6 leading-6'>
-                                                <button onClick={() => {i18n.changeLanguage('en') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English</button>
-                                                <button onClick={() => {i18n.changeLanguage('cn') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文</button>
-                                                <button onClick={() => {i18n.changeLanguage('es') }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
+                                                <button onClick={() => {i18n.changeLanguage('en'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇺🇸 English</button>
+                                                <button onClick={() => {i18n.changeLanguage('cn'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇨🇳 中文</button>
+                                                <button onClick={() => {i18n.changeLanguage('es'), close() }} className='p-2 rounded-xl hover:bg-purple-600/5 transition-all'> 🇲🇽 Español</button>
                                             </div> 
                                         </div>
-
+                                        )}
                                     </Popover.Panel>
                             </Transition>
                         </Popover>
