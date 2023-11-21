@@ -53,7 +53,7 @@ function DisplayTest( currentQuestion ) {
             </div>
             <p className='p-2 m-2 max-w-md text-center'>
                 This placement test will provide an English level score on the CEFR scale (beginner, intermediate, or advanced).
-                It will test your reading, writing, and grammar knowledge.  
+                It will test your reading and grammar knowledge.  
                 It is 30 questions long and untimed.
             </p>
             <p>
