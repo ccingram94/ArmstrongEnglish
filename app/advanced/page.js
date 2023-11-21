@@ -6,7 +6,7 @@ import a1grammardata from "../../a1grammardata";
 
 function Advanced() {
   return (
-    <div className="bg-indigo-900 w-full text-center justify-center items-center">
+    <div className="bg-violet-900 w-full min-h-screen text-center justify-center items-center">
       <div className="container mx-auto">
         <h1 className="text-3xl p-2 pt-6 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-violet-100 to-indigo-100">Advanced Lessons</h1>
         <h2 className="text-xl p-2 font-bold text-indigo-100/70">CEFR Levels C1 and C2</h2>
