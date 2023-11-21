@@ -19,27 +19,23 @@ function BookingCalendar() {
 
   return (
     <>
-      <div className='w-full flex flex-row flex-wrap md:basis-1/2 m-2 drop-shadow-2xl rounded-xl bg-white justify-center items-center content-center'>
+      <div className='w-full lg:w-1/3 flex flex-row flex-wrap m-2 lg:p-2 drop-shadow-2xl rounded-xl bg-white justify-center items-center content-center'>
         <Calendar onChange={onChange} value={value} className="p-4 rounded-xl m-2"
           maxDate={addDays(new Date(), 60)} minDate={ addDays(new Date(), 1) }
         />
       </div>
-      <div className="p-2 m-2 flex flex-col w-full md:basis-1/3 justify-center text-center h-full bg-white rounded-xl shadow-2xl">
-        <h2 className="p-2 text-3xl font-extrabold text-violet-800">{ format(value, 'iiii') }</h2>
-        <h2 className="p-2 text-3xl font-extrabold text-violet-800">{ format(value, 'MMMM d, yyyy') }</h2>
-        <p className="p-2 font-bold text-violet-800/80">classes available today:</p>
-        <div className='bg-violet-900 text-white p-2 m-2'>
-          <p className='p-2'>{format(slot1, 'p z')}</p>
-        </div>
-        <div className='bg-violet-900 text-white p-2 m-2'>
-          <p className='p-2'>{ format(slot2, 'p z') }</p>
-        </div>
-        <div className='bg-violet-900 text-white p-2 m-2'>
-          <p className='p-2'>{format(slot3, 'p z')}</p>
-        </div>
-        <div className='bg-violet-900 text-white p-2 m-2'>
-          <p className='p-2'>{format(slot4, 'p z')}</p>
-        </div>
+      <div className='w-1/2 md:w-1/4 flex flex-col m-2 p-2 drop-shadow-2xl rounded-xl bg-white justify-center items-center content-center'>
+        <h3 className='text-xl lg:text-2xl font-extrabold text-violet-900 p-2 m-2'>Classes Today</h3>
+        <button className='p-2 m-2 lg:text-xl font-extrabold text-white bg-violet-900 rounded-xl drop-shadow-xl opacity-80 hover:opacity-100 transition-all'>
+          Option 1
+        </button>
+      </div>
+      <div className='w-1/2 md:w-1/4 flex flex-row flex-wrap m-2 p-2 drop-shadow-2xl rounded-xl bg-white justify-center items-center text-center'>
+        <h3 className='text-xl lg:text-2xl font-extrabold text-violet-900 p-2 m-2'>Selected Classes</h3>
+        <p className='lg:text-xl font-bold text-violet-900/90 p-2 m-2'>no classes selected</p>
+        <button className='p-2 m-2 lg:text-xl font-extrabold text-white bg-gradient-to-br from-violet-800 to-indigo-800 rounded-xl opacity-80 hover:opacity-100 transition-all drop-shadow-xl'>
+          Book Now
+        </button>
       </div>
     </>
   );

@@ -12,7 +12,7 @@ function Class() {
       </div>
       {/* Top Section: Booking Calendar */}
       <div className="w-full">
-        <div className="flex flex-row flex-wrap container mx-auto w-full">
+        <div className="flex flex-row flex-wrap justify-center items-center">
           <BookingCalendar />
         </div>
       </div>
