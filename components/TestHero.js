@@ -30,7 +30,7 @@ function TestHero() {
           <p className="px-12 lg:p-2 m-2 text-center lg:text-start">
             {t('try our free online English test and get immediate scores')}
           </p>
-          <Link href="/freeenglishtest">
+          <Link href="/test">
             <p className="p-2 m-2 mt-6 inline-block bg-violet-600 px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold text-white hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               {t('Start Test')}
             </p>
