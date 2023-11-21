@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { ChatBubbleLeftRightIcon, MapPinIcon, LanguageIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Popover, Transition } from '@headlessui/react';
@@ -73,30 +73,40 @@ function Footer() {
           <div className="w-full md:w-fit m-auto p-6">
             <h2 className="text-xl font-extrabold mb-4">{t('Learn')}</h2>
             <ul className="opacity-80 font-semibold">
-              <li>{t('Beginner')}</li>
-              <li>{t('Intermediate')}</li>
-              <li>{t('Advanced')}</li>
-              {/* Add more links as needed */}
+              <Link href="/beginner">
+                <li>{t('Beginner')}</li>
+              </Link>
+              <Link href="/intermediate">
+                <li>{t('Intermediate')}</li>
+              </Link>
+              <Link href="/advanced">
+                <li>{t('Advanced')}</li>
+              </Link>
             </ul>
           </div>
   
           <div className="w-full md:w-fit m-auto p-6">
             <h2 className="text-xl font-extrabold mb-4">{t('Classes')}</h2>
             <ul className='opacity-80 font-semibold'>
-              <li>{t('Book a Class')}</li>
-              <li>{t('Tutoring')}</li>
-              <li>{t('Group Classes')}</li>
-              {/* Add more links as needed */}
+              <Link href="/class">
+                <li>{t('Book a Class')}</li>
+              </Link>
+              <Link href="/class">
+                <li>{t('Tutoring')}</li>
+              </Link>
+              <Link href="/class">
+                <li>{t('Group Classes')}</li>
+              </Link>
             </ul>
           </div>
 
           <div className="w-full md:w-fit m-auto p-6">
             <h2 className="text-xl font-extrabold mb-4">{t('Practice')}</h2>
             <ul className='opacity-80 font-semibold'>
-              <li>{t('Videos')}</li>
-              <li>{t('Lessons')}</li>
+              <Link href="/beginner">
+                <li>{t('Lessons')}</li>
+              </Link>
               <li>{t('Quiz')}</li>
-              {/* Add more links as needed */}
             </ul>
           </div>
 
