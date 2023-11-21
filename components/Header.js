@@ -197,7 +197,7 @@ function Header () {
                 </nav>
 
             { mobileOpen && 
-                <div className='bg-white w-full'>
+                <div onClick={() => {setMobileOpen(false)}} className='bg-white w-full'>
                         <div className='bg-violet-900 text-white w-full flex flex-row justify-center items-center'>
                             <LanguageIcon className='h-8 opacity-50' />
                             <p className="font-extrabold opacity-50 text-lg p-2">{ currentLang }</p>
