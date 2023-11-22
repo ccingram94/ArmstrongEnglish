@@ -1,5 +1,5 @@
-import BookingCalendar from "../../components/BookingCalendar";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
+'use client';
+import { InlineWidget } from "react-calendly";
 
 function Class() {
   return (
@@ -11,12 +11,7 @@ function Class() {
             <h2 className="text-xl p-2 font-bold text-white/70">One Class (25 Minutes) $25</h2>
           </div>
         </div>
-        {/* Top Section: Booking Calendar */}
-        <div className="w-full h-full">
-          <div className="flex flex-row flex-wrap justify-center items-center">
-            <BookingCalendar />
-          </div>
-        </div>
+        <InlineWidget url="https://calendly.com/constanceingram94/25min" />
       </div>
     </div>
   );
