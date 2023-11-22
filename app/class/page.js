@@ -11,21 +11,25 @@ function Class() {
     return e.data.event;
   }
    
-  window.addEventListener(
-    'message',
-    function(e) {
-      if (isCalendlyEvent(e)) {
-        console.log(e.data);
+  if(typeof window !== 'undefined')
+  {
+    window.addEventListener(
+      'message',
+      function(e) {
+        if (isCalendlyEvent(e)) {
+          console.log(e.data);
+        }
+        if (e.data.event == 'calendly.event_type_viewed') {
+          setLoading(false);
+        }
+        if (e.data.event == 'calendly.event_scheduled') {
+          setClassInfo(e.data.payload.event.uri)
+          setScheduled(true);
+        }
       }
-      if (e.data.event == 'calendly.event_type_viewed') {
-        setLoading(false);
-      }
-      if (e.data.event == 'calendly.event_scheduled') {
-        setClassInfo(e.data.payload.event.uri)
-        setScheduled(true);
-      }
-    }
-  );
+    );
+  }
+
 
   return (
     <div className="bg-hero bg-cover bg-center w-full">
