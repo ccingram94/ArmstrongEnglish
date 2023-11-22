@@ -1,12 +1,13 @@
 'use client';
 import { useState } from 'react';
+import questions from '../testdata.js'
 
-function DisplayTest( currentQuestion ) {
+function DisplayTest( props ) {
     const [ started, startTest ] = useState(false);
     const [ finished, finishTest ] = useState(false);
     const [ score, setScore ] = useState(0);
-    
-    const questiondata = currentQuestion.currentQuestion;
+    console.log(questions)
+    const questiondata = props.currentQuestion;
 
     function selectAnswer(answer) {
         console.log(answer)
@@ -51,7 +52,7 @@ function DisplayTest( currentQuestion ) {
                     <p className='p-2'>C2 (Upper)</p>
                 </div>
             </div>
-            <p className='p-2 m-2 max-w-md text-center'>
+            <p className='p-2 m-2 text-sm max-w-sm text-center'>
                 This placement test will provide an English level score on the CEFR scale (beginner, intermediate, or advanced).
                 It will test your reading and grammar knowledge.  
                 It is 30 questions long and untimed.

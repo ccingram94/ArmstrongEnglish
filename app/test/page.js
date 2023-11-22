@@ -9,7 +9,7 @@ function Test() {
   return (
     <div className="bg-hero bg-cover bg-center w-full text-center justify-center items-center">
       <div className="w-full h-full bg-violet-900/90 min-h-screen">
-        <h1 className="text-3xl p-2 pt-6 font-extrabold text-white">Free Online English Test</h1>
+        <h1 className="text-3xl p-2 pt-6 font-extrabold text-white">English Test</h1>
         <PlacementTest questions={questions} />
       </div>
   </div>
