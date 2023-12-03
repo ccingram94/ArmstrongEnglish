@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('https://d20etpig7obrzj.cloudfront.net/hero.jpg')",
+        'hero': "url('https://d20etpig7obrzj.cloudfront.net/herobg.jpg')",
       },
     },
   },

@@ -46,16 +46,15 @@ function Class() {
               <p className='text-xl font-bold'>Please save your class information.</p>
               <p>{ classInfo }</p>
               <div className='flex flex-row flex-wrap justify-center items-center text-center p-2 m-2'>
-                <div className='p-2'>
+                <div className='p-2 max-w-md'>
                   <p className='text-xl font-extrabold'>Payment</p>
                   <p>Click the button below or scan the QR code to be taken to the payment page.
                     Unpaid classes will be cancelled.
                   </p>
                 </div>
-                <div className='p-2'>
+                <div className='p-2 max-w-md'>
                   <p className='text-xl font-extrabold'>Join ClassIn</p>
                   <p>Click the button below or scan the QR code to join Mrs. Armstrong on ClassIn.
-                    All classes are delivered online via ClassIn.
                   </p>
                 </div>
               </div>

@@ -24,7 +24,7 @@ function Footer() {
   }, [i18n.language])
 
     return (
-      <footer className='bg-hero bg-cover bg-center lg:bg-top'>
+      <footer className='bg-hero bg-cover bg-bottom lg:bg-top'>
       <div className="bg-violet-900/90 text-white py-8">
         <div className="flex flex-wrap justify-center text-center">
           {/* First Column */}
