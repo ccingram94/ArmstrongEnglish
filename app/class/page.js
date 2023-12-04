@@ -21,12 +21,11 @@ function Class() {
         <div className="w-full h-full flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center text-center">
             <h1 className="text-3xl p-2 pt-6 font-extrabold text-white">Book a Class</h1>
-            <h2 className="text-xl p-2 font-bold text-white/70">One Class (25 Minutes) $25</h2>
+            <h2 className="text-xl p-2 font-bold text-white/70">One Class (25 Minutes) 200元</h2>
           </div>
-          <Cal
-	  calLink="armstrongenglish/25min"
-	  style={{width:"100%",height:"100%",overflow:"scroll"}}
-	  config={{layout: 'month_view'}} />
+          <Cal calLink="armstrongenglish/25min"
+	        style={{width:"100%",height:"100%",overflow:"scroll"}}
+	        config={{layout: 'month_view'}} />
         </div>
       </div>
     </div>

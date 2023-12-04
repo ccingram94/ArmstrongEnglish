@@ -186,7 +186,6 @@ function Header () {
                     
 
                     <div className='hidden lg:flex lg:flex-1 m-2 items-center justify-end text-sm font-semibold leading-6'>
-                        <p className='text-indigo-900/50 m-2 p-2'>{t('Login')}</p>
                         <Link href="/class">
                             <button className='rounded-md bg-violet-600 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
                                 <p className='p-2.5'>{t('Book a Class')}</p>

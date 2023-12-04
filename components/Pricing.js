@@ -27,7 +27,7 @@ function Pricing() {
                 <h3 className="text-lg font-semibold text-violet-900">{t('Online Lessons')}</h3>
                 <p className="mt-4 text-gray-500">{t('Free')}</p>
                 <Link
-                  href="/lessons"
+                  href="/beginner"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
                   {t('Explore Lessons')}
@@ -53,7 +53,7 @@ function Pricing() {
                 <h3 className="text-lg font-semibold text-violet-900">{t('Quiz')}</h3>
                 <p className="mt-4 text-gray-500">{t('Free')}</p>
                 <a
-                  href="/class"
+                  href="/test"
                   className="mt-6 block w-full px-4 py-2 text-center font-semibold bg-violet-600 text-white rounded-md hover:bg-violet-700 transition duration-300"
                 >
                   {t('Start Test')}
