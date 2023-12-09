@@ -3,7 +3,7 @@ const a1data = [
     {
         "id": 1,
         "title": "The Alphabet",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/1alphabet.jpg',
         "vocab": [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
         'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
@@ -13,7 +13,7 @@ const a1data = [
     {
         "id": 2,
         "title": "Hello and Goodbye",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/2hellogoodbye.jpg',
         "vocab": [ 'hi', 'hello', 'goodbye', 'name', "What's your name?", "My name is _____.", "How are you?",
         "I'm fine.", "How old are you?", "I am ___ years old.", "Where do you live?", "I live in _____.",
         'bye', 'goodbye', "See you later!", "Have a good day!", "Good morning!", "Good afternoon!", "Good evening!", "Good night!", 
@@ -23,7 +23,7 @@ const a1data = [
     {
         "id": 3,
         "title": "Numbers",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/3numbers.jpg',
         "vocab": [ 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
         'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
         'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety', 'one hundred',
@@ -33,7 +33,7 @@ const a1data = [
     {
         "id": 4,
         "title": "Colors",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/4colors.jpg',
         "vocab": [ 'black', 'white', 'blue', 'red', 'yellow', 'green', 'orange', 'pink', 'purple', 'gray', 'brown',
         'light', 'dark', 'gold', 'silver', 'rainbow', 'beautiful', 'favorite', ],
         "vocabimages": [],
@@ -41,7 +41,7 @@ const a1data = [
     {
         "id": 5,
         "title": "Doing Things",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/5doingthings.jpg',
         "vocab": [ 'ask', 'answer', 'bring', 'buy', 'call', 'choose', 'close', 'come', 'do', 'explain',
         'get', 'give', 'have', 'help', 'know', 'learn', 'like', 'listen', 'live', 'love', 'meet', 
         'open', 'play', 'read', 'say', 'see', 'sit', 'sleep', 'spell', 'start', 'stop', 'teach', 'want', 'wake', 'work', 'write',
@@ -51,7 +51,7 @@ const a1data = [
     {
         "id": 6,
         "title": "Family",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/6family.jpg',
         "vocab": [ 'girl', 'boy', 'man', 'woman', 'baby', 'mom', 'dad', 'mother', 'father', 'grandpa', 'grandma', 'parents', 'grandparents', 
         'sister', 'brother', 'son', 'daughter', 'children', 'wife','aunt', 'uncle', 'cousin', 'family', 'friend', 'cat', 'dog', 'people', 'home',
         'married', 'old', 'young'],
@@ -60,7 +60,7 @@ const a1data = [
     {
         "id": 7,
         "title": "Daily Life",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/7dailylife.jpg',
         "vocab": [ 'morning', 'afternoon', 'evening', 'night', 'day', 'yesterday', 'tomorrow', 'week', 'weekend',
         'beginning', 'end', 'house', 'neighbor', 'city',  'job', 'school', 'student', 'teacher', 'math', 'science', 'history',
             'homework', 'test', 'pen', 'pencil', 'library', 'movie', 'music', 'TV', 'phone', 'computer',
@@ -70,7 +70,7 @@ const a1data = [
     {
         "id": 8,
         "title": "Food and Drink",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/8fooddrink.jpg',
         "vocab": [ 'food', 'drinks', 'meal', 'breakfast', 'lunch', 'dinner', 'dessert', 'fruit', 'vegetable', 'apple', 'banana', 'orange', 'strawberry',
         'tomato', 'potato', 'onion', 'carrot', 'salad', 'rice', 'noodles', 'bread', 'soup', 'meat', 'chocolate', 'chips', 
         'pizza', 'hamburger', 'cake', 'ice cream', 'milk', 'coffee', 'tea', 'juice', 'soda', 'water',
@@ -80,7 +80,7 @@ const a1data = [
     {
         "id": 9,
         "title": "Weather and Seasons",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/9weatherseasons.jpg',
         "vocab":  [ 'weather', 'temperature', 'sunny', 'rainy', 'snowy', 'windy', 'cloudy', 'hot', 'cold', 
         'seasons', 'spring', 'summer', 'winter', 'fall', 'January', 'February', 'March', 'April', 
         'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ],
@@ -89,7 +89,7 @@ const a1data = [
     {
         "id": 10,
         "title": "Time and Dates",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/10timedate.jpg',
         "vocab": [ 'time', 'date', 'week', 'month', 'year', 'calendar', 'clock', "__ o'clock", 'hour', 'minute', 
         'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 
          ],
@@ -98,7 +98,7 @@ const a1data = [
     {
         "id": 11,
         "title": "Body and Clothing",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/11bodyclothing.jpg',
         "vocab": [ 'body', 'head', 'hands', 'feet', 'arms', 'legs', 'stomach', 'hair', 'eyes', 'mouth', 'nose',
         'fingers', 'toes', 'clothing', 'wear', 'dress', 'shirt', 'sweater', 'pants', 'skirt', 'shoes', 'socks', 
         'underwear', 'gloves', 'hat', 'coat', 'jacket', 'scarf', 'umbrella', 'bag', 'wallet' ],
@@ -107,7 +107,7 @@ const a1data = [
     {
         "id": 12,
         "title": "Going Places",
-        "image": '',
+        "image": 'https://d20etpig7obrzj.cloudfront.net/12goingplaces.jpg',
         "vocab": [ 'north', 'south', 'east', 'west', 'place', 'city', 'country', 'world', 'map', 'travel', 'car', 'bike', 
                     'boat', 'bus', 'taxi', 'plane', 'passport', 'airport', 'building', 'park', 'house', 'school', 'office', 'restaurant', 
                     'hotel', 'theater', 'police', 'hospital', 'store', 'tourist', 'traffic', 'city', 'road', 'street', 
