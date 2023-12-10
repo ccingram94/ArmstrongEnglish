@@ -1,4 +1,6 @@
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useState, useEffect } from "react";
 import { UserIcon, UserCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline";
@@ -55,38 +57,42 @@ function Class() {
             <div id="courselist" className="flex flex-row flex-wrap w-full justify-center items-start">
               <h2 className="text-2xl m-2 p-2 text-white/90 font-extrabold">Group Courses Available Now</h2>
               <div className="flex flex-col w-full md:w-3/4 justify-center items-center bg-white rounded-md p-2 m-2">
-                <div className="flex flex-row flex-wrap p-2 m-2">
-                <div className="flex flex-col justify-center items-start text-start p-2 m-2">
-                  <p className="text-xl text-violet-900 border-b-2 border-violet-600/20 font-bold">Ancient Western Literature</p>
-                  <p className="text-sm text-violet-900/90 font-bold">Monday, Wednesday, and Friday</p>
-                  <p className="text-sm text-violet-900/90 font-bold">8PM Beijing Time</p>
-                  <div className="text-sm text-violet-900/90 font-bold pt-2">
-                    <p>Intermediate Level (B1 and B2)</p>
-                    <p>200元 per 50 Minute Class </p>
-                    <p>Total Tuition: 2,400元 </p>
-                    <p>Online via ClassIn </p>
+                <div className="flex flex-row flex-wrap justify-center items-center p-2 m-2">
+                  <div className="flex flex-col justify-center items-center text-center p-2 m-2">
+                    <p className="text-xl text-violet-900 border-b-2 border-violet-600/20 font-bold">Ancient Western Literature</p>
+                    <p className="text-sm text-violet-900/90 font-bold">Monday, Wednesday, and Friday</p>
+                    <p className="text-sm text-violet-900/90 font-bold">8PM Beijing Time</p>
+                    <div className="text-sm text-violet-900/90 font-bold pt-2">
+                      <p>Intermediate Level (B1 and B2)</p>
+                      <p>200元 per 50 Minute Class </p>
+                      <p>Total Tuition: 2,400元 </p>
+                      <p>Online via ClassIn </p>
+                    </div>
+                    <Link href="https://buy.stripe.com/9AQg042cy6h36Vq6oo">
+                      <button className="p-2 m-4 rounded-md shadow-xl opacity-90 hover:opacity-100 transition-all font-bold text-white/90 bg-gradient-to-br from-violet-800 to-indigo-600">
+                        Register for Course
+                      </button>
+                    </Link>
+                    <p className="text-violet-900 text-sm p-2 m-2">or scan the QR Code below:</p>
+                    <Image src={'https://d20etpig7obrzj.cloudfront.net/westernlit.png'} width={150} height={150}  />
                   </div>
-                  <button className="p-2 m-4 rounded-md shadow-xl opacity-90 hover:opacity-100 transition-all font-bold text-white/90 bg-gradient-to-br from-violet-800 to-indigo-600">
-                    Register for Course
-                  </button>
-                </div>
-                <div className="p-2 m-2">
-                  <p className="text-xl text-violet-900 font-bold ">Course Schedule</p>
-                  <div className="text-violet-900/90 text-sm p-2 m-2">
-                    <p>Class 1 (Monday, January 8): Ancient Western Mythology (prehistory)</p>
-                    <p>Class 2 (Wednesday, January 10): The Epic of Gilgamesh (1300 BC)</p>
-                    <p>Class 3 (Friday, January 12): Hesiod and Greek Poetry (800 BC)</p>
-                    <p>Class 4 (Monday, January 15): The Illiad by Homer (800 BC)</p>
-                    <p>Class 5 (Wednesday, January 17): The Odyssey by Homer (800 BC)</p>
-                    <p>Class 6 (Friday, January 19): Histories by Herodotus (440 BC)</p>
-                    <p>Class 7 (Monday, January 22): Greek Philosophy and Socrates (600 - 450 BC)</p>
-                    <p>Class 8 (Wednesday, January 24): Plato and Aristotle (450 - 350 BC)</p>
-                    <p>Class 9 (Friday, January 26): The Aeneid by Virgil (19 BC)</p>
-                    <p>Class 10 (Monday, January 29): The Metamorphoses by Ovid (8 AD)</p>
-                    <p>Class 11 (Wednesday, January 31): Meditations by Marcus Aurelius (180 AD)</p>
-                    <p>Class 12 (Monday, February 5): Final Essay Discussion Group</p>
+                  <div className="flex flex-col max-w-lg p-2 m-2">
+                    <p className="text-xl text-violet-900 font-bold ">Course Schedule</p>
+                    <div className="text-violet-900/90 text-sm p-2 m-2">
+                      <p className='p-2'>January 8 (Monday): Ancient Western Mythology</p>
+                      <p className='p-2'>January 10 (Wednesday): The Epic of Gilgamesh</p>
+                      <p className='p-2'>January 12 (Friday): Hesiod and Greek Poetry</p>
+                      <p className='p-2'>January 15 (Monday): The Illiad by Homer</p>
+                      <p className='p-2'>January 17 (Wednesday): The Odyssey by Homer</p>
+                      <p className='p-2'>January 19 (Friday): Histories by Herodotus</p>
+                      <p className='p-2'>January 22 (Monday): Greek Philosophy and Socrates</p>
+                      <p className='p-2'>January 24 (Wednesday): Plato and Aristotle</p>
+                      <p className='p-2'>January 26 (Friday): The Aeneid by Virgil</p>
+                      <p className='p-2'>January 29 (Monday): The Metamorphoses by Ovid</p>
+                      <p className='p-2'>January 31 (Wednesday): Meditations by Marcus Aurelius</p>
+                      <p className='p-2'>February 5 (Monday): Final Essay Discussion Group</p>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
             <div id="bookingcalendar" className="flex flex-row flex-wrap w-full justify-center items-start">
