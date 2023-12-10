@@ -16,10 +16,7 @@ function TeachersSection() {
               <h2 className='text-violet-900 p-2 m-2 font-extrabold text-center text-2xl'>{t('Teacher')}</h2>
               <div className='flex flex-row flex-wrap justify-center items-center p-2 m-2'>
                 <div>
-                  <Image src={'https://d20etpig7obrzj.cloudfront.net/utaustin.jpg'} width={150} height={150} className='rounded-full shadow-xl' />
-                </div>
-                <div>
-                  <UserCircleIcon className="h-40 w-auto mx-auto text-violet-600 opacity-80" />
+                  <Image src={'https://d20etpig7obrzj.cloudfront.net/headshot.jpeg'} width={150} height={150} className='rounded-full shadow-xl' />
                 </div>
               </div>
               <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center mt-4">Mrs. Armstrong</h2>
@@ -29,9 +26,10 @@ function TeachersSection() {
             </div>
           </div>
           <div className='flex flex-row flex-wrap justify-center items-center lg:w-1/2'>
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/teyl.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl' />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl120.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl'  />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl160.jpg'} width={500} height={300} className='rounded-md m-1 h-48 w-auto shadow-xl'  />
+            <Image src={'https://d20etpig7obrzj.cloudfront.net/utaustin.jpg'} width={150} height={150} className='rounded-full shadow-xl m-2' />
+            <Image src={'https://d20etpig7obrzj.cloudfront.net/teyl.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2' />
+            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl120.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2'  />
+            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl160.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2'  />
           </div>
       </div>
     </div>
