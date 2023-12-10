@@ -12,24 +12,28 @@ function TeachersSection() {
       <div className='flex flex-wrap items-start p-8 text-white w-full bg-violet-900/60'>
         {/* Teacher profile card */}
           <div className="w-full lg:w-1/2 p-4">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className='text-violet-900 p-2 m-2 font-extrabold text-center text-2xl'>{t('Teacher')}</h2>
+            <div className="flex flex-col justify-center items-center bg-white rounded-lg shadow-md p-6">
+              <h2 className='text-violet-900 pt-4 font-extrabold text-center text-2xl'>{t('Teacher')}</h2>
+              <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center">Mrs. Armstrong</h2>
               <div className='flex flex-row flex-wrap justify-center items-center p-2 m-2'>
-                <div>
-                  <Image src={'https://d20etpig7obrzj.cloudfront.net/headshot.jpeg'} width={150} height={150} className='rounded-full shadow-xl' />
-                </div>
+                  <Image src={'https://d20etpig7obrzj.cloudfront.net/headshot.jpeg'} width={150} height={150} className='rounded-full shadow-xl m-2' />
+                  <Image src={'https://d20etpig7obrzj.cloudfront.net/utaustin.jpg'} width={150} height={150} className='rounded-full shadow-xl m-2' />
               </div>
-              <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center mt-4">Mrs. Armstrong</h2>
-              <p className="text-violet-900 opacity-80 text-center text-sm md:text-base m-2 p-2">
+              <p className="text-violet-900 opacity-80 max-w-lg text-justify text-sm md:text-base m-2 p-2">
               {t('teacherbio')}
               </p>
+              <div className='flex flex-row flex-wrap justify-center items-center m-2'>
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/teyl.jpg'} width={300} height={180} className='rounded-md w-1/4 w-auto shadow-xl m-2' />
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl120.jpg'} width={300} height={180} className='rounded-md w-1/4 w-auto shadow-xl m-2'  />
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl160.jpg'} width={300} height={180} className='rounded-md w-1/4 w-auto shadow-xl m-2'  />
+              </div>
             </div>
           </div>
-          <div className='flex flex-row flex-wrap justify-center items-center lg:w-1/2'>
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/utaustin.jpg'} width={150} height={150} className='rounded-full shadow-xl m-2' />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/teyl.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2' />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl120.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2'  />
-            <Image src={'https://d20etpig7obrzj.cloudfront.net/tefl160.jpg'} width={500} height={300} className='rounded-md h-48 w-auto shadow-xl m-2'  />
+          <div className="w-full lg:w-1/2 p-4">
+            <div className="flex flex-col justify-center items-center bg-white rounded-lg shadow-md p-6">
+              <h2 className='text-violet-900 pt-4 font-extrabold text-center text-2xl'>Testimonials</h2>
+              <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center">Student Messages</h2>
+            </div>
           </div>
       </div>
     </div>
