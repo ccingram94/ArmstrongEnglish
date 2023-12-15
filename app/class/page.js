@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useState, useEffect } from "react";
-import { UserIcon, UserCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { UserIcon, UserCircleIcon, UserGroupIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 function Class() {
   const [ seeCourses, setSeeCourses ] = useState(false);
@@ -34,8 +34,21 @@ function Class() {
                 <h1 className="text-3xl font-extrabold">Tutoring</h1>
                 <UserIcon className="h-12 m-2" />
               </div>
-              <h2 className="text-xl m-2 font-bold text-violet-900/90">200元 per 25 minute class</h2>
-              <h2 className="text-xl m-2 font-bold text-violet-900/90">one student per class</h2>
+              <div className='flex flex-col justify-start items-start p-2'>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90"> 200元 per 25 minute class</h2>
+                </div>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90">one student per class</h2>
+                </div>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90">online via ClassIn</h2>
+                </div>
+              </div>
+              
               <button 
               onClick={() => document.getElementById("bookingcalendar").scrollIntoView()}
               className="p-2 m-2 rounded-md shadow-xl opacity-90 hover:opacity-100 transition-all font-bold text-white/90 bg-gradient-to-br from-violet-800 to-indigo-600">
@@ -47,8 +60,20 @@ function Class() {
                 <h1 className="text-3xl font-extrabold">Group Courses</h1>
                 <UserGroupIcon className="h-12 m-2" />
               </div>
-              <h2 className="text-xl m-2 font-bold text-violet-900/90">200元 per 50 minute class</h2>
-              <h2 className="text-xl m-2 font-bold text-violet-900/90">up to 6 students per class</h2>
+              <div className='flex flex-col justify-start items-start p-2'>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90">200元 per 50 minute class</h2>
+                </div>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90">up to 6 students per class</h2>
+                </div>
+                <div className="flex flex-row justify-center items-center">
+                  <CheckIcon className='h-6 text-violet-900'/>
+                  <h2 className="text-xl m-2 font-bold text-violet-900/90">online via ClassIn</h2>
+                </div>
+              </div>
               <button onClick={() => document.getElementById("courselist").scrollIntoView()} className="p-2 m-2 rounded-md shadow-xl opacity-90 hover:opacity-100 transition-all font-bold text-white/90 bg-gradient-to-br from-violet-800 to-indigo-600">
                 See Courses
               </button>
