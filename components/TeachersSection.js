@@ -33,6 +33,11 @@ function TeachersSection() {
             <div className="flex flex-col justify-center items-center bg-white rounded-lg shadow-md p-6">
               <h2 className='text-violet-900 pt-4 font-extrabold text-center text-2xl'>Testimonials</h2>
               <h2 className="text-xl text-violet-900 opacity-80 md:text-2xl font-semibold text-center">Student Messages</h2>
+              <div className='flex flex-row flex-wrap justify-center items-center m-2'>
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/review1.jpg'} width={300} height={180} className='rounded-md w-auto shadow-xl m-2' />
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/review2.jpg'} width={300} height={180} className='rounded-md w-auto shadow-xl m-2'  />
+                <Image src={'https://d20etpig7obrzj.cloudfront.net/review3.jpg'} width={300} height={180} className='rounded-md w-auto shadow-xl m-2'  />
+              </div>
             </div>
           </div>
       </div>
